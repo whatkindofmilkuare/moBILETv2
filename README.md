@@ -1,13 +1,11 @@
-# README.md
+# moBILETv2
 
 ## Opis
-Strona naśladuje działanie aplikacji moBilet. 
+Strona została stworzona i jest rozwijana wyłącznie w celach edukacyjnych, jako ćwiczenie umiejętności programistycznych. Szczególne umiejętności które są nabywane podczas realizacji tego projektu to tworzenie aplikacji internetowych i aplikacji PWA. Projekt ten ma na celu odwzorowanie mechaniki i działania poszczególnych funkcji aplikacji mobilnej Mobilet. Twórcy strony nie popierają korzystania z niej w sposób naruszający przepisy prawa.
+Prosimy o odpowiedzialne korzystanie z tej strony.
 
 ## Pochodzenie danych
-Część materiałów została pobrana od pierwotnych twórców aplikacji (tj. część oprawy graficznej, logo i ikony które zostały użyte w aplikacji), tutaj zostawiam odniesienie do oficjalnej strony twórców odwzorowywanej aplikacji https://mobilet.pl jeśli chodzi o kod został on napisany od zera (część rozwiązań która używa języka javascript została wygenerowana przesz sztuczną inteligencje od Microsoft czyli MS Copilot i zmodyfikowana do własnych potrzeb).
-
-## Cel
-Jest to próba nauki tworzenia aplikacji web'owych przez średnio doświadczonego fana programowania. Cele demonstracyjne umiejętności programistycznych.
+Część assetów aplikacji pochodzi od twórców oficjalnej aplikacji (tj. logo i ikony które zostały użyte w aplikacji), tutaj zostawiam odniesienie do oficjalnej strony twórców odwzorowywanej aplikacji https://mobilet.pl Jeśli chodzi o kod został on napisany od zera (rozwiązania które używają języka javascript zostały wygenerowane przez Copilot lub chatGPT i zmodyfikowane do własnych potrzeb).
 
 ## Podziękowania
-Mam nadzieje że moje dzieło podoba się użytkownikom. Dziękuje za przeczytanie tego pliku
+Mamy nadzieje że dzieło naszego zespołu podoba się użytkownikom. Dziękujemy za przeczytanie tego pliku
