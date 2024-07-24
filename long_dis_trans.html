@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--Kodowanie-->
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <!--Robotom dziekujemy-->
+        <meta name='robots' content='noindex, nofollow' />
+        <!--Tytuł strony-->
+        <title>moBiLETv2 | Long-distance transport</title>
+        <!--Favicon strony-->
+        <link rel="shortcut icon" href="img/icons/appicons/appicon5bocchi.png">
+        <!--Kanoniczny adres strony-->
+        <link rel="canonical" href="https://kanar.fun">
+        <!--Plik manifestu-->
+        <link rel="manifest" href="/manifest.json">
+        <!--Theme color-->
+        <meta name="theme-color" content="000000">
+        <!--Baner strony w wiadomościach na mess-->
+        <meta property="og:image" content="https://kanar.fun/img/site_mess_baner.png">
+        <meta property="og:description" content="O kurwa! Czy to zakolini?">
+        <meta property="og:title" content="Z nami kontrole biletowe to fun!">
+        <meta property="og:url" content="https://kanar.fun">
+        <meta property="og:type" content="website">
+        <!--Odniesienie do pliku css-->
+        <link rel="stylesheet" href="css/long_dis_trans.css">
+        <!--Skrypt odpowiadający za blokade powiększenia-->
+        <script src="js/zoom_block.js"></script>
+        <!--Rejestracja service worker-->
+        <script src="js/reg_of_sw.js"></script>
+    </head>
+    <body>
+        <!--Topbar strony-->
+        <header>
+            <nav id="navtopbar">
+                <div id="topbar">
+                    <div id="hightopbar">
+                        <div class="item">
+                            <span class="backicon">
+                                <a href="index.html?skipSplash&skipToast">
+                                    <img src="img/icons/backicon.png" width="225px" height="110px" alt="back icon(previous part of site)">
+                                </a>
+                            </span>
+                        </div>
+                        <div class="item">
+                            <img class="logo-mobilet" src="img/logo/logo_mobilet.webp" width="335px" height="150px" style="text-align: center; margin-top: 50px;" alt="logo of mobilet app">
+                        </div>
+                        <div class="item">
+                            <span id="nexticon">
+                                <img src="img/icons/nexticon.png" width="110px" height="58px" alt="next icon">
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 id="napismzdikradom">Carrier</h3>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="topbuttons">
+                <button id="topbutton1">Carrier</button>
+                <button id="topbutton2">History</button>
+            </div>
+            <div id="carrierContent">
+                <div class="listofuttons">
+                    <div class="buttonlongdistance">
+                        <div class="titleofbutton">Arriva RP</div>
+                        <div class="nextarrow">
+                            <img src="img/icons/nextarrow.png" width="40px" height="40px" alt="next arrow icon">
+                        </div>
+                    </div>
+                    <div class="buttonlongdistance">
+                        <div class="titleofbutton">the initial station</div>
+                        <div class="nextarrow">
+                            <img src="img/icons/nextarrow.png" width="40px" height="40px" alt="next arrow icon">
+                        </div>
+                    </div>
+                    <div class="buttonlongdistance">
+                        <div class="titleofbutton">final station</div>
+                        <div class="nextarrow">
+                            <img src="img/icons/nextarrow.png" width="40px" height="40px" alt="next arrow icon">
+                        </div>
+                    </div>
+                </div>
+                <div id="divbuttonnext-id">
+                    <div class="divbuttonnext">
+                        <button class="buttonnext">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="navfooter">
+            <div class="footer">
+                text - jazda z ku--
+            </div>
+        </footer>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    </body>
+</html>

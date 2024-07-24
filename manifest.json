@@ -1,0 +1,75 @@
+{
+    "name": "moBILETv2",
+    "short_name": "moBILETv2",
+    "description": "Twój bilet w komórce",
+    "orientation": "portrait",
+    "categories": ["travel"],
+    "start_url": "/index.html?skipToast",
+    "display": "fullscreen",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "lang": "en",
+    "icons": [
+      {
+        "src": "/img/icons/app_icons/app_icon_2.png",
+        "sizes": "240x240",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/icons/app_icons/app_icon_3.png",
+        "sizes": "230x230",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/icons/app_icons/app_icon_5_bocchi.png",
+        "sizes": "200x200",
+        "type": "image/png"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Ticket Radom",
+        "url": "/rdm_ticket.html",
+        "icons": [
+          {
+            "src": "/img/icons/app_icons/ticket_rdm_icon.png",
+            "sizes": "96x96",
+            "type": "image/png"
+          }
+        ]
+      }
+    ],
+    "screenshots": [
+    {
+      "src": "/img/app_ss/app_ss_1",
+      "sizes": "1125×2436",
+      "type": "image/png",
+      "label": "Screen 1"
+    },
+    {
+      "src": "/img/app_ss/app_ss_2",
+      "sizes": "1125×2436",
+      "type": "image/png",
+      "label": "Screen 2"
+    },
+    {
+      "src": "/img/app_ss/app_ss_3",
+      "sizes": "1125×2436",
+      "type": "image/png",
+      "label": "Screen 3"
+    },
+    {
+      "src": "/img/app_ss/app_ss_4",
+      "sizes": "1125×2436",
+      "type": "image/png",
+      "label": "Screen 4"
+    },
+    {
+      "src": "/img/app_ss/app_ss_5",
+      "sizes": "1125×2436",
+      "type": "image/png",
+      "label": "Screen 5"
+    }
+  ]
+  }
+  

@@ -1,0 +1,238 @@
+/* style dla sekcji body */
+html, body {
+    background-color: rgb(0, 0, 0);
+	background-image: url("../img/skyscrapers_background.png");
+	background-position: bottom;
+    background-repeat: no-repeat; 
+	background-size: 350%;
+	height: 100%;
+	margin: 0;
+	user-select: none; /* Działa na większości nowoczesnych przeglądarek */
+	-webkit-user-select: none; /* Działa w WebKit (Safari, Chrome) */
+	-moz-user-select: none; /* Działa w Firefoxie */
+	-ms-user-select: none; /* Działa w Internet Explorerze i Edge */
+}
+
+#full-page {
+	height: 100%;
+}
+
+@media screen and (min-width: 427px) {
+
+	/* topbar strony */
+	#topbar {
+		width: 100%;
+		height: 350px;
+		margin-top: 50px;
+		text-align: bottom;
+		background-color: rgb(17, 98, 164);
+		text-align: center;
+		align-items: center;
+		justify-content: right;
+	}
+
+	#hightopbar {
+		display: flex;
+	}
+
+	.item {
+		flex: 1;
+		display: flex;
+		justify-content: center; /* Center horizontally (for the div) */
+		align-items: center; /* Center vertically (for the div) */
+		text-align: center; /* Center text horizontally */
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+	}
+	
+	.item:first-child {
+		justify-content: flex-start; /* Align the item to the left */
+		align-items: flex-end; /* Align the item to the bottom */
+		text-align: left; /* Align text to the left */
+	}
+	
+	.item:nth-child(3) {
+		justify-content: flex-end; /* Align the item to the right */
+		align-items: flex-end; /* Align the item to the bottom */
+		text-align: right; /* Align text to the right */
+	}
+
+	#navtopbar {
+		max-width: none;
+		width: 100%;
+		margin: 0;
+		
+	}
+
+	.backicon {
+		color: white;
+		font-family: "Lato", sans-serif;
+		font-size: 67px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		text-align: left;
+	}
+	
+	.backicon:active {
+		color: white;
+		font-family: "Lato", sans-serif;
+		font-size: 67px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		text-align: left;
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+	}
+	
+	.backicon:hover {
+		color: white;
+		font-family: "Lato", sans-serif;
+		font-size: 67px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		text-align: left;
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+	}
+	
+	.backicon a:active { 
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+		background: none;
+		box-shadow: none;
+		opacity: 1;
+		filter: none;
+	}
+	
+	.backicon a:hover {
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+		background: none;
+		box-shadow: none;
+		opacity: 1;
+		filter: none;
+	}
+	
+	.backicon a img:active {
+		color: white;
+		font-family: "Lato", sans-serif;
+		font-size: 67px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		text-align: left;
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+	}
+	
+	.backicon a img:hover {
+		color: white;
+		font-family: "Lato", sans-serif;
+		font-size: 67px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		text-align: left;
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+	}
+
+	.skyscapericon {
+		padding-right: 30px;
+		padding-bottom: 30px;
+	}
+
+	#navfooter {
+		width: 100%;
+		margin: 0;
+	}
+
+	.footer {
+		background-color: black;
+		margin-left: -10px;
+		margin-bottom: 0;
+		height: 400px;
+	}
+
+	.napismzdikradom {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-weight: 400;
+		font-size: 48px;
+		border-top: solid 1px black;
+		padding-top: 40px;
+		padding-bottom: 15px;
+		margin-top: 0;
+	}
+
+	.container {
+		background-color: white;
+	}
+
+    .topbuttons {
+        background-color: rgb(219, 219, 219);;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+		padding-top: 13px;
+    }
+
+    .topbutton1 {
+        width: 500px;
+        background-color: rgb(17, 98, 164);
+        color: white;
+        font-size: 42px;
+        font-family: "Noto Sans Elymaic", sans-serif;
+        font-weight: 400;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 20px;
+        border-style: none;
+    }
+
+    .topbutton2 {
+        width: 470px;
+        background-color: rgb(219, 219, 219);
+        color: rgb(17, 98, 164);
+        font-size: 42px;
+        font-family: "Noto Sans Elymaic", sans-serif;
+        font-weight: 400;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 20px;
+        border-style: none;
+    }
+
+    .carrierslist {
+        margin-top: 15px;
+        margin-bottom: 500px;
+        text-decoration: none;
+    }
+
+    .carrier {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+
+    .busicon {
+        width: 140px;
+        height: 140px;
+        background-color: rgb(191, 0, 7);
+        text-decoration: none;
+    }
+
+    .nameofcarrier {
+        color: black;
+        font-size: 54px;
+        font-family: "Noto Sans Elymaic", sans-serif;
+        padding-top: 40px;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+}

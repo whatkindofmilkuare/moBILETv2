@@ -1,0 +1,32 @@
+/* Style dla latającego objektu na pierwszym slajdzie */
+.flyingobject {
+    position: relative;
+    width: 860px;
+    height: 85px;
+    overflow: hidden;
+    background-color: rgb(191, 0, 7);
+}
+
+#animatedImage {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.01s linear;
+}
+
+/* Style dla latającego objektu na drugim slajdzie */
+.flyingobject2 {
+    position: relative;
+    width: 860px;
+    height: 85px;
+    overflow: hidden;
+    background-color: rgb(191, 0, 7);
+}
+
+#animatedImage2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.01s linear;
+}
+

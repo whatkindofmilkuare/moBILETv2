@@ -1,0 +1,266 @@
+html, body {
+    background-color: rgb(0, 0, 0);
+	background-position: center; 
+    background-repeat: no-repeat; 
+	background-size: 500%;
+	height: 100%;
+	margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#full-page {
+	height: 100%;
+}
+
+#topbar {
+    width: 100%;
+    height: 220px;
+	margin-top: 50px;
+    text-align: bottom;
+    background-color: rgb(17, 98, 164);
+    text-align: center;
+    align-items: center;
+    justify-content: right;
+}
+
+#hightopbar {
+    display: flex;
+}
+
+.item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+}
+
+.item:first-child {
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: left;
+}
+
+.item:nth-child(3) {
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+#navtopbar {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    
+}
+
+.backicon {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 67px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.backicon:active {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 67px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    text-align: left;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+}
+
+.backicon:hover {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 67px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    text-align: left;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+}
+
+.backicon a:active { 
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    background: none;
+    box-shadow: none;
+    opacity: 1;
+    filter: none;
+}
+
+.backicon a:hover {
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    background: none;
+    box-shadow: none;
+    opacity: 1;
+    filter: none;
+}
+
+.backicon a img:active {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 67px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    text-align: left;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+}
+
+.backicon a img:hover {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 67px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    text-align: left;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+}
+
+.nexticon {
+    padding-right: 40px;
+    padding-bottom: 39px;
+}
+
+.titleofcontent {
+    font-size: 55px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#container {
+    background-color: white;
+    padding-bottom: 5px;
+}
+
+#paintmentoptions-id {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.paintmentoptions {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.item2 {
+    flex: 1;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+    width: 260px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.item2:first-child {
+    text-align: center;
+}
+
+.form {
+    margin-top: 180px;
+}
+
+.form-1  {
+    margin-left: 45px;
+}
+
+.form-2  {
+    margin-left: 45px;
+}
+
+.title-amount {
+    width: fit-content;
+    font-size: 53px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.title-email {
+    width: fit-content;
+    font-size: 53px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 9px;
+}
+
+.PLNtext {
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    padding-left: 20px;
+}
+
+.amount-input {
+    width: 300px;
+    height: 75px;
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: right;
+    border-style: solid;
+    border-color: rgb(165, 165, 165);
+    border-width: 1px;
+    border-radius: 20px;
+    padding-right: 25px;
+}
+
+.email-input {
+    width: 800px;
+    height: 80px;
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    border-style: solid;
+    border-color: rgb(165, 165, 165);
+    border-width: 1px;
+    border-radius: 20px;
+    padding-left: 25px;
+}
+
+#divbuttonnext-id {
+    margin-top: 350px;
+    margin-bottom: 150px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.divbuttonnex {
+    flex: 1;
+}
+
+.buttonnext {
+    width: 850px;
+    height: 120px;
+    background-color: rgb(17, 98, 164);
+    color: white;
+    font-size: 53px;
+    padding: 10px;
+}

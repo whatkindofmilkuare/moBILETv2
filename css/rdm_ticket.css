@@ -1,0 +1,401 @@
+/* style dla sekcji body */
+html, body {
+    background-color: rgb(0, 0, 0);
+	background-image: url("../img/skyscrapers_background.png");
+	background-position: bottom; 
+    background-repeat: no-repeat; 
+	background-size: 350%;
+	height: 100%;
+	margin: 0;
+	user-select: none; /* Działa na większości nowoczesnych przeglądarek */
+	-webkit-user-select: none; /* Działa w WebKit (Safari, Chrome) */
+	-moz-user-select: none; /* Działa w Firefoxie */
+	-ms-user-select: none; /* Działa w Internet Explorerze i Edge */
+}
+
+#full-page {
+	height: 100%;
+}
+
+
+/* Kafelek z biletem */ /* style tylko dla szerokości wyświetlaczy większych niż na telefonach */
+@media screen and (max-width: 426px) {
+
+	.outside1 {
+		width: 1000px;
+		height: 400px;
+		margin: 0 auto;
+	}
+
+	.inside1 {
+		width: 500px;
+		height: 600px;
+		background-color: rgb(191, 0, 7);
+		margin: 0 auto;
+	}
+
+	.paragraph1 {
+		width: 150px;
+		margin: 0 auto;
+		color: white;
+	}
+
+	.outside2 {
+		width: px;
+		height: 170px;
+		margin: 0 auto;
+		text-align: top;
+	}
+
+	.inside2 {
+		width: 500px;
+		height: 150px;
+		background-color: rgb(17, 98, 164);
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.paragraph2 {
+		width: 150px;
+		margin: 0 auto;
+		color: white;
+	}
+
+	.napismzdikradom {
+		color: white;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.karuzela {
+		width: 500px;
+		height: 600px;
+		background-color: bisque;
+		margin: auto;
+	}
+
+	.karuzela img {
+		width: 500px;
+		height: 600px;
+	}
+}
+
+
+
+/* Kafelek z biletem */ /* style tylko dla szerokości wyświetlaczy na telefonach */
+@media screen and (min-width: 427px) {
+
+	/* kafelek z biletem numer jeden */
+	.kafelekbilet1 {
+		width: 860px;
+		height: 1000px;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgb(191, 0, 7);
+		padding: 15px;
+	}
+	
+	/* kafelek z biletem numer jeden (bilet godzinny) */
+	.kafelekbilet1p0 {
+		width: 860px;
+		height: 980px;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgb(191, 0, 7);
+		padding: 15px;
+	}
+
+	/* kafelek z biletem numer dwa */
+	.kafelekbilet2 {
+		width: 860px;
+		height: 1000px;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgb(191, 0, 7);
+		padding: 15px;
+	}
+
+	/* kafelek z biletem numer trzy */
+	.kafelekbilet3 {
+		width: 860px;
+		height: 950px;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgb(191, 0, 7);
+		padding: 15px;
+	}
+
+	/* topbar strony */
+	#topbar {
+		width: 100%;
+		height: 350px;
+		margin-top: 50px;
+		text-align: bottom;
+		background-color: rgb(17, 98, 164);
+		text-align: center;
+		align-items: center;
+		justify-content: right;
+	}
+
+	#hightopbar {
+		display: flex;
+	}
+
+	.item {
+		flex: 1;
+		display: flex;
+		justify-content: center; /* Center horizontally (for the div) */
+		align-items: center; /* Center vertically (for the div) */
+		text-align: center; /* Center text horizontally */
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+	}
+	
+	.item:first-child {
+		justify-content: flex-start; /* Align the item to the left */
+		align-items: flex-end; /* Align the item to the bottom */
+		text-align: left; /* Align text to the left */
+	}
+	
+	.item:nth-child(3) {
+		justify-content: flex-end; /* Align the item to the right */
+		align-items: flex-end; /* Align the item to the bottom */
+		text-align: right; /* Align text to the right */
+	}
+
+	#navtopbar {
+		max-width: none;
+		width: 100%;
+		margin: 0;
+		
+	}
+
+	.backicon {
+		color: white;
+		font-family: "Lato", sans-serif;
+		font-size: 67px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		text-align: left;
+	}
+	
+	.backicon:active {
+		color: white;
+		font-family: "Lato", sans-serif;
+		font-size: 67px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		text-align: left;
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+	}
+	
+	.backicon:hover {
+		color: white;
+		font-family: "Lato", sans-serif;
+		font-size: 67px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		text-align: left;
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+	}
+	
+	.backicon a:active { 
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+		background: none;
+		box-shadow: none;
+		opacity: 1;
+		filter: none;
+	}
+	
+	.backicon a:hover {
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+		background: none;
+		box-shadow: none;
+		opacity: 1;
+		filter: none;
+	}
+	
+	.backicon a img:active {
+		color: white;
+		font-family: "Lato", sans-serif;
+		font-size: 67px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		text-align: left;
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+	}
+	
+	.backicon a img:hover {
+		color: white;
+		font-family: "Lato", sans-serif;
+		font-size: 67px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		text-align: left;
+		-webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
+		-webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+	}
+
+	.backarrow2 {
+		color: rgb(17, 98, 164);
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 60px;
+	}
+
+	#navfooter {
+		width: 100%;
+		margin: 0;
+	}
+
+	.footer {
+		background-color: black;
+		margin-left: -10px;
+		margin-bottom: 0;
+		height: 400px;
+	}
+
+	/* napis mzdik radom na topbar'ze strony */
+	.napismzdikradom {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-weight: 400;
+		font-size: 48px;
+		border-top: solid 1px black;
+		padding-top: 40px;
+		padding-bottom: 15px;
+		margin-top: 0;
+	}
+
+	/* napis mzdik radom na kafelku z biletem */
+	#napismzdikradom1 {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 54px;
+		font-weight: 400;
+		margin-top: 40px;
+		margin-left: 30px;
+		margin-bottom: 15px;
+	}
+
+	/* mały napis na kafelku z biletem 1 */
+	#napismaly {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 32px;
+		font-weight: 400;
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+
+	/* napis z rodzajem biletu */
+	#napisrodzajbiletu {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 50px;
+		font-weight: 400;
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+
+	/* mały napis na kafelku z biletem 2 */
+	#napismaly2 {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 32px;
+		font-weight: 400;
+		margin-top: 160px;
+		margin-left: 30px;
+	}
+
+	/* napis określający numer boczny pojazdu */
+	#napisnumerbocznypojazdu {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 50px;
+		font-weight: 400;
+		margin-top: 20px;
+		margin-left: 30px;
+	}
+
+	/* napis określający ważność biletu */
+	#napisnumerwaznydo {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 54px;
+		font-weight: 400;
+		margin-top: 20px;
+		margin-left: 30px;
+	}
+
+	/* napis określający numer biletu */
+	#napisnumerbiletu {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 53px;
+		font-weight: 400;
+		margin-top: 220px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 5px;
+		text-align: center;
+		border-width: 5px;
+		border-style: solid;
+		border-color: white;
+		width: 650px;
+	}
+
+	/* mały napis na kafelku z biletem 3 */
+	#napismaly3 {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 32px;
+		font-weight: 400;
+		margin-top: 160px;
+		margin-left: 30px;
+	}
+
+	/* napis określający godzinę zakupu biletu */
+	#napisgodzinazakupu {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 54px;
+		font-weight: 400;
+		margin-top: 220px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 5px;
+		text-align: center;
+		border-width: 5px;
+		border-style: solid;
+		border-color: white;
+		width: 650px;
+	}
+
+	/* napis określający current number */
+	#napiscurrentnumber {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 54px;
+		font-weight: 400;
+		margin-top: 20px;
+		margin-left: 30px;
+		text-decoration: none;
+	}
+
+	#qrcode {
+		margin-left: auto; 
+		margin-right: auto; 
+		text-align: center; 
+		align-items: center;
+		margin-top: 140px;
+	}
+
+}
