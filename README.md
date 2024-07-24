@@ -4,11 +4,11 @@ Projekt ten ma na celu odwzorowanie mechaniki i działania poszczególnych funkc
 Przygotowana przez nas aplikacja internetowa to prosty klon natywnej aplikacji moBILET w odsłonie webowej.
 
 ### Zrzuty ekranu aplikacji w formie PWA na iOS
-<img src="https://kanar.fun/img/app_ss/app_ss_1.PNG" alt="Alt text" width="100" height="200">
-<img src="https://kanar.fun/img/app_ss/app_ss_2.PNG" alt="Alt text" width="100" height="200">
-<img src="https://kanar.fun/img/app_ss/app_ss_3.PNG" alt="Alt text" width="100" height="200">
-<img src="https://kanar.fun/img/app_ss/app_ss_4.PNG" alt="Alt text" width="100" height="200">
-<img src="https://kanar.fun/img/app_ss/app_ss_5.PNG" alt="Alt text" width="100" height="200">
+<img src="https://kanar.fun/img/app_ss/app_ss_1.PNG" alt="Alt text" width="100" height="200" style="display: inline-block;">
+<img src="https://kanar.fun/img/app_ss/app_ss_2.PNG" alt="Alt text" width="100" height="200" style="display: inline-block;">
+<img src="https://kanar.fun/img/app_ss/app_ss_3.PNG" alt="Alt text" width="100" height="200" style="display: inline-block;">
+<img src="https://kanar.fun/img/app_ss/app_ss_4.PNG" alt="Alt text" width="100" height="200" style="display: inline-block;">
+<img src="https://kanar.fun/img/app_ss/app_ss_5.PNG" alt="Alt text" width="100" height="200" style="display: inline-block;">
 
 ### Cel w jakim projekt jest tworzony i rozwijany
 Strona została stworzona i jest rozwijana wyłącznie w celach edukacyjnych, jako ćwiczenie umiejętności programistycznych. Szczególne umiejętności które są nabywane podczas realizacji tego projektu to tworzenie aplikacji internetowych i aplikacji PWA. Twórcy strony nie popierają korzystania z niej w sposób naruszający przepisy prawa. Prosimy o odpowiedzialne korzystanie z tej strony.
