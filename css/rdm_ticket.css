@@ -17,70 +17,6 @@ html, body {
 	height: 100%;
 }
 
-
-/* Kafelek z biletem */ /* style tylko dla szerokości wyświetlaczy większych niż na telefonach */
-@media screen and (max-width: 426px) {
-
-	.outside1 {
-		width: 1000px;
-		height: 400px;
-		margin: 0 auto;
-	}
-
-	.inside1 {
-		width: 500px;
-		height: 600px;
-		background-color: rgb(191, 0, 7);
-		margin: 0 auto;
-	}
-
-	.paragraph1 {
-		width: 150px;
-		margin: 0 auto;
-		color: white;
-	}
-
-	.outside2 {
-		width: px;
-		height: 170px;
-		margin: 0 auto;
-		text-align: top;
-	}
-
-	.inside2 {
-		width: 500px;
-		height: 150px;
-		background-color: rgb(17, 98, 164);
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	.paragraph2 {
-		width: 150px;
-		margin: 0 auto;
-		color: white;
-	}
-
-	.napismzdikradom {
-		color: white;
-		font-family: 'Roboto', sans-serif;
-	}
-
-	.karuzela {
-		width: 500px;
-		height: 600px;
-		background-color: bisque;
-		margin: auto;
-	}
-
-	.karuzela img {
-		width: 500px;
-		height: 600px;
-	}
-}
-
-
-
 /* Kafelek z biletem */ /* style tylko dla szerokości wyświetlaczy na telefonach */
 @media screen and (min-width: 427px) {
 
@@ -138,6 +74,8 @@ html, body {
 		text-align: center;
 		align-items: center;
 		justify-content: right;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
 	}
 
 	#hightopbar {
