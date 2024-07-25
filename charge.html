@@ -26,34 +26,35 @@
         <link rel="stylesheet" href="css/charge.css?v=2.5">
         <!--Skrypt odpowiadający za blokade powiększenia-->
         <script src="js/zoom_block.js"></script>
+        <!--Skrypt odpowiadający za opóźnienie generowania się strony-->
+        <script src="js/load_delay.js"></script>
         <!--Rejestracja service worker-->
         <script src="js/reg_of_sw.js"></script>
     </head>
     <body>
+        <div id="loader"></div>
         <!--Topbar strony-->
-        <header>
-            <nav id="navtopbar">
-                <div id="topbar">
-                    <div id="hightopbar">
-                        <div class="item">
-                            <span class="backicon">
-                                <a href="index.html?skipSplash&skipToast">
-                                    <img src="img/icons/backicon.png" width="225px" height="110px" alt="back icon(previous part of site)">
-                                </a>
-                            </span>
-                        </div>
-                        <div class="item">
-                            <img class="logo-mobilet" src="img/logo/logo_mobilet.webp" width="335px" height="150px" style="text-align: center; margin-top: 50px;" alt="logo of mobilet app">
-                        </div>
-                        <div class="item">
-                            <span class="nexticon">
-                                <img src="img/icons/nexticon.png" width="110px" height="58px" alt="next icon">
-                            </span>
-                        </div>
+        <nav id="navtopbar">
+            <div id="topbar">
+                <div id="hightopbar">
+                    <div class="item">
+                        <span class="backicon">
+                            <a href="index.html?skipSplash&skipToast">
+                                <img src="img/icons/backicon.png" width="225px" height="110px" alt="back icon(previous part of site)">
+                            </a>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <img class="logo-mobilet" src="img/logo/logo_mobilet.webp" width="335px" height="150px" style="text-align: center; margin-top: 50px;" alt="logo of mobilet app">
+                    </div>
+                    <div class="item">
+                        <span class="nexticon">
+                            <img src="img/icons/nexticon.png" width="110px" height="58px" alt="next icon">
+                        </span>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
         <div id="container">
             <div class="titleofcontent">
                 <p>Enrich account by:</p>
