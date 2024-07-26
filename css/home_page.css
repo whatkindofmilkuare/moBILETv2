@@ -59,20 +59,6 @@ html, body {
     text-align: center; /* Center text horizontally */
 }
 
-.item:active {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* Center horizontally (for the div) */
-    align-items: center; /* Center vertically (for the div) */
-    text-align: center; /* Center text horizontally */
-    background: none;
-    box-shadow: none;
-    opacity: 1;
-    filter: none;
-    -webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
-    -webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
-}
-
 .item:first-child {
     justify-content: flex-start; /* Align the item to the left */
     align-items: flex-end; /* Align the item to the bottom */
@@ -97,11 +83,6 @@ html, body {
 
 
 .staricon {
-    padding-right: 40px;
-    padding-bottom: 35px;
-}
-
-.staricon:active {
     padding-right: 40px;
     padding-bottom: 35px;
 }

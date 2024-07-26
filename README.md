@@ -3,7 +3,7 @@
 Projekt ten ma na celu odwzorowanie mechaniki i działania poszczególnych funkcji aplikacji mobilnej moBILET.
 Przygotowana przez nas aplikacja internetowa to prosty klon natywnej aplikacji moBILET w odsłonie webowej.
 
-### Jak pobrać aplikacje?
+### Jak pobrać naszą aplikacje?
 
 #### iOS
 Aby pobrać naszą aplikacje na system iOS wystraczy wejść na [app.kanar.fun](https://app.kanar.fun), kliknąć na przycisk udostępniania zlokalizowany na środku dolnego paska safari, a następnie wybrać opcje **Dodaj do ekranu głównego**.

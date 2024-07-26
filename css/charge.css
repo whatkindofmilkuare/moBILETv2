@@ -70,68 +70,6 @@ html, body {
     text-align: left;
 }
 
-.backicon:active {
-    color: white;
-    font-family: "Lato", sans-serif;
-    font-size: 67px;
-    padding-top: 30px;
-    padding-bottom: 0;
-    text-align: left;
-    -webkit-touch-callout: none;
-    -webkit-user-drag: none;
-}
-
-.backicon:hover {
-    color: white;
-    font-family: "Lato", sans-serif;
-    font-size: 67px;
-    padding-top: 30px;
-    padding-bottom: 0;
-    text-align: left;
-    -webkit-touch-callout: none;
-    -webkit-user-drag: none;
-}
-
-.backicon a:active { 
-    -webkit-touch-callout: none;
-    -webkit-user-drag: none;
-    background: none;
-    box-shadow: none;
-    opacity: 1;
-    filter: none;
-}
-
-.backicon a:hover {
-    -webkit-touch-callout: none;
-    -webkit-user-drag: none;
-    background: none;
-    box-shadow: none;
-    opacity: 1;
-    filter: none;
-}
-
-.backicon a img:active {
-    color: white;
-    font-family: "Lato", sans-serif;
-    font-size: 67px;
-    padding-top: 30px;
-    padding-bottom: 0;
-    text-align: left;
-    -webkit-touch-callout: none;
-    -webkit-user-drag: none;
-}
-
-.backicon a img:hover {
-    color: white;
-    font-family: "Lato", sans-serif;
-    font-size: 67px;
-    padding-top: 30px;
-    padding-bottom: 0;
-    text-align: left;
-    -webkit-touch-callout: none;
-    -webkit-user-drag: none;
-}
-
 .nexticon {
     padding-right: 40px;
     padding-bottom: 39px;
@@ -157,7 +95,7 @@ html, body {
     justify-content: center;
 }
 
-.paintmentoptions {
+.paymentoptions {
     width: 80%;
     display: flex;
     justify-content: center;

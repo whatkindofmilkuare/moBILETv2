@@ -6,10 +6,10 @@ html, body {
 	background-size: 500%;
 	height: 100%;
 	margin: 0;
-    user-select: none; /* Działa na większości nowoczesnych przeglądarek */
-    -webkit-user-select: none; /* Działa w WebKit (Safari, Chrome) */
-    -moz-user-select: none; /* Działa w Firefoxie */
-    -ms-user-select: none; /* Działa w Internet Explorerze i Edge */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #full-page {
@@ -39,23 +39,23 @@ html, body {
     .item {
         flex: 1;
         display: flex;
-        justify-content: center; /* Center horizontally (for the div) */
-        align-items: center; /* Center vertically (for the div) */
-        text-align: center; /* Center text horizontally */
-        -webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
-        -webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        -webkit-touch-callout: none;
+        -webkit-user-drag: none;
     }
     
     .item:first-child {
-        justify-content: flex-start; /* Align the item to the left */
-        align-items: flex-end; /* Align the item to the bottom */
-        text-align: left; /* Align text to the left */
+        justify-content: flex-start;
+        align-items: flex-end;
+        text-align: left;
     }
     
     .item:nth-child(3) {
-        justify-content: flex-end; /* Align the item to the right */
-        align-items: flex-end; /* Align the item to the bottom */
-        text-align: right; /* Align text to the right */
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
     }
 
     #navtopbar {
@@ -74,68 +74,6 @@ html, body {
         text-align: left;
     }
     
-    .backicon:active {
-        color: white;
-        font-family: "Lato", sans-serif;
-        font-size: 67px;
-        padding-top: 30px;
-        padding-bottom: 0;
-        text-align: left;
-        -webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
-        -webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
-    }
-    
-    .backicon:hover {
-        color: white;
-        font-family: "Lato", sans-serif;
-        font-size: 67px;
-        padding-top: 30px;
-        padding-bottom: 0;
-        text-align: left;
-        -webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
-        -webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
-    }
-    
-    .backicon a:active { 
-        -webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
-        -webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
-        background: none;
-        box-shadow: none;
-        opacity: 1;
-        filter: none;
-    }
-    
-    .backicon a:hover {
-        -webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
-        -webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
-        background: none;
-        box-shadow: none;
-        opacity: 1;
-        filter: none;
-    }
-    
-    .backicon a img:active {
-        color: white;
-        font-family: "Lato", sans-serif;
-        font-size: 67px;
-        padding-top: 30px;
-        padding-bottom: 0;
-        text-align: left;
-        -webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
-        -webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
-    }
-    
-    .backicon a img:hover {
-        color: white;
-        font-family: "Lato", sans-serif;
-        font-size: 67px;
-        padding-top: 30px;
-        padding-bottom: 0;
-        text-align: left;
-        -webkit-touch-callout: none; /* Wyłącza menu kontekstowe na urządzeniach dotykowych, takich jak iOS */
-        -webkit-user-drag: none; /* Wyłącza możliwość przeciągania obrazu w przeglądarkach WebKit */
-    }
-
     #nexticon {
         padding-right: 40px;
         padding-bottom: 39px;

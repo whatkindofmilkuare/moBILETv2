@@ -29,6 +29,10 @@
         <script src="js/zoom_block.js"></script>
         <!--Skrypt odpowiadający za opóźnienie generowania się strony-->
         <script src="js/load_delay.js"></script>
+        <!--Ładowanie jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!--Skrypt odpowiadający za animacje przycisków-->
+        <script src="js/bttn_trans_parking.js"></script>
         <!--Rejestracja service worker-->
         <script src="js/reg_of_sw.js"></script>
     </head>
@@ -58,16 +62,24 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="napismzdikradom">Parking</h3>
+                    <h3 id="napis_parking">Parking</h3>
+                    <h3 id="napis_history">History</h3>
                 </div>
             </div>
         </nav>
         <div class="container">
             <div class="topbuttons">
-                <button class="topbutton1">Locations</button>
-                <button class="topbutton2">History</button>
+                <button class="topbutton1_active">Locations</button>
+                <button class="topbutton2_noactive">History</button>
+                <button class="topbutton1_noactive">Locations</button>
+                <button class="topbutton2_active">History</button>
             </div>
-            <div class="addcitytitle">Add city</div>
+            <div id="locations_content">
+                <div class="addcitytitle">Add city</div>
+            </div>
+            <div id="history_content">
+                <div class="addcitytitle2">Add city</div>
+            </div>
         </div>
         <footer id="navfooter">
             <div class="footer">

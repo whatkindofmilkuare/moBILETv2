@@ -1,0 +1,22 @@
+{
+    "siteTitle": "moBILETv2",
+    "defaultLanguage": "en",
+    "supportedLanguages": ["en"],
+    "features": {
+      "enableRegistration": false,
+      "enableSocialLogin": false,
+      "maintenanceMode": false
+    },
+    "security": {
+      "enableHttps": true
+    },
+    "paths": {
+      "images": "/img",
+      "scripts": "/js",
+      "styles": "/css"
+    },
+    "contact": {
+      "email": "kontakt@kanar.fun"
+    }
+  }
+  
