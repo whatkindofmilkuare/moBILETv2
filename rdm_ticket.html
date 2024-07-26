@@ -44,99 +44,101 @@
     </head>
     <body>
         <div id="loader"></div>
-        <!--Topbar strony-->
-        <nav id="navtopbar">
-            <div id="topbar">
-                <div id="hightopbar">
-                    <div class="item">
-                        <span class="backicon">
-                            <a onclick="goBack()">
-                                <img src="img/icons/backicon.png" width="225px" height="110px" alt="back icon(previous part of site)">
-                            </a>
-                        </span>
+        <div id="content">
+            <!--Topbar strony-->
+            <nav id="navtopbar">
+                <div id="topbar">
+                    <div id="hightopbar">
+                        <div class="item">
+                            <span class="backicon">
+                                <a onclick="goBack()">
+                                    <img src="img/icons/backicon.png" width="225px" height="110px" alt="back icon(previous part of site)">
+                                </a>
+                            </span>
+                        </div>
+                        <div class="item">
+                            <img class="logo-mobilet" src="img/logo/logo_mobilet.webp" width="335px" height="150px" style="text-align: center; margin-top: 50px;" alt="logo of mobilet app">
+                        </div>
+                        <div class="item">
+                            <span class="backarrow2">&lt;back</span>
+                        </div>
                     </div>
-                    <div class="item">
-                        <img class="logo-mobilet" src="img/logo/logo_mobilet.webp" width="335px" height="150px" style="text-align: center; margin-top: 50px;" alt="logo of mobilet app">
-                    </div>
-                    <div class="item">
-                        <span class="backarrow2">&lt;back</span>
+                    <div>
+                        <h3 class="napismzdikradom">MZDiK Radom</h3>
                     </div>
                 </div>
-                <div>
-                    <h3 class="napismzdikradom">MZDiK Radom</h3>
+            </nav>
+            <!--Karuzela slajdów-->
+            <div id="karuzela">
+                <!--Lista slajdów-->
+                <ul class="slides-container" id="slides-container">
+                    <!--Pierwszy slajd-->
+                    <li class="slide">
+                        <div class="kafelekbilet1p0">
+                            <p id="napismzdikradom1" >Radom MZDiK</p>
+                            <div class="flyingobject">
+                                <img src="img/logo/logo_mzdik_rdm.webp" alt="Zdjęcie" id="animatedImage" width="150px" height="85px" alt="logo mzdik radom">
+                            </div>
+                            <p id="napismaly" >ticket:</p>
+                            <p id="napisrodzajbiletu" >Bilet godzinny U</p>
+                            <p id="napismaly2" >Valid until:</p>
+                            <p id="napisnumerwaznydo" >1048</p>
+                            <p id="napisnumerbiletu" ></p>
+                            
+                        </div>
+                    </li>
+                    <!--Drugi slajd-->
+                    <li class="slide">
+                        <div class="kafelekbilet2">
+                            <p id="napismzdikradom1" >Radom MZDiK</p>
+                            <div class="flyingobject2">
+                                <img src="img/logo/logo_mzdik_rdm.webp" alt="Zdjęcie" id="animatedImage2" width="150px" height="85px" alt="logo mzdik radom">
+                            </div>
+                            <p id="napismaly" >price:</p>
+                            <p id="napisnumerbocznypojazdu" >2.50 PLN</p>
+                            <p id="napismaly3" >current number:</p>
+                            <p id="napiscurrentnumber" data-number="91606191210"></p>
+                            <p id="napisgodzinazakupu" >
+                            </p>
+                        </div>
+                    </li>
+                    <!--Trzeci slajd-->
+                    <li class="slide">
+                        <div class="kafelekbilet3">
+                            <p id="napismzdikradom1" >Radom MZDiK</p>
+                            <div id="qrcode">
+                                <img src="img/ticket_qr_code.png" width="600" height="600" alt="ticket qr code">
+                            </div> 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="slides-container">
+            </div>
+            <div id="dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>  
+            <!--Przyciski do przesuwania pomiędzy slajdami-->
+            <!--Troche prehistoria bo w css jest przy ich id display: none;-->
+            <!--No ale dobra niech zostaną bo tak bez nich karuzela nie działa na mobilce jak tego bym sobie życzył-->
+            <button class="slide-arrow" id="slide-arrow-prev">
+                &#8249;
+            </button>     
+            <button class="slide-arrow" id="slide-arrow-next">
+                &#8250;
+            </button>
+            <footer id="navfooter">
+                <div class="footer">
+                    text - jazda z ku--
                 </div>
-            </div>
-        </nav>
-        <!--Karuzela slajdów-->
-        <div id="karuzela">
-            <!--Lista slajdów-->
-            <ul class="slides-container" id="slides-container">
-                <!--Pierwszy slajd-->
-                <li class="slide">
-                    <div class="kafelekbilet1p0">
-                        <p id="napismzdikradom1" >Radom MZDiK</p>
-                        <div class="flyingobject">
-                            <img src="img/logo/logo_mzdik_rdm.webp" alt="Zdjęcie" id="animatedImage" width="150px" height="85px" alt="logo mzdik radom">
-                        </div>
-                        <p id="napismaly" >ticket:</p>
-                        <p id="napisrodzajbiletu" >Bilet godzinny U</p>
-                        <p id="napismaly2" >Valid until:</p>
-                        <p id="napisnumerwaznydo" >1048</p>
-                        <p id="napisnumerbiletu" ></p>
-                        
-                    </div>
-                </li>
-                <!--Drugi slajd-->
-                <li class="slide">
-                    <div class="kafelekbilet2">
-                        <p id="napismzdikradom1" >Radom MZDiK</p>
-                        <div class="flyingobject2">
-                            <img src="img/logo/logo_mzdik_rdm.webp" alt="Zdjęcie" id="animatedImage2" width="150px" height="85px" alt="logo mzdik radom">
-                        </div>
-                        <p id="napismaly" >price:</p>
-                        <p id="napisnumerbocznypojazdu" >2.50 PLN</p>
-                        <p id="napismaly3" >current number:</p>
-                        <p id="napiscurrentnumber" data-number="91606191210"></p>
-                        <p id="napisgodzinazakupu" >
-                        </p>
-                    </div>
-                </li>
-                <!--Trzeci slajd-->
-                <li class="slide">
-                    <div class="kafelekbilet3">
-                        <p id="napismzdikradom1" >Radom MZDiK</p>
-                        <div id="qrcode">
-                            <img src="img/ticket_qr_code.png" width="600" height="600" alt="ticket qr code">
-                        </div> 
-                    </div>
-                </li>
-            </ul>
+            </footer>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
         </div>
-        <div id="slides-container">
-        </div>
-        <div id="dots-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>  
-        <!--Przyciski do przesuwania pomiędzy slajdami-->
-        <!--Troche prehistoria bo w css jest przy ich id display: none;-->
-        <!--No ale dobra niech zostaną bo tak bez nich karuzela nie działa na mobilce jak tego bym sobie życzył-->
-        <button class="slide-arrow" id="slide-arrow-prev">
-            &#8249;
-        </button>     
-        <button class="slide-arrow" id="slide-arrow-next">
-            &#8250;
-        </button>
-        <footer id="navfooter">
-            <div class="footer">
-                text - jazda z ku--
-            </div>
-        </footer>
-        <script>
-            function goBack() {
-                window.history.back();
-            }
-        </script>
     </body>
 </html>

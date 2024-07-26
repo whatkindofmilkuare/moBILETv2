@@ -38,58 +38,60 @@
     </head>
     <body>
         <div id="loader"></div>
-        <!--Topbar strony-->
-        <nav id="navtopbar">
-            <div id="topbar">
-                <div id="hightopbar">
-                    <div class="item">
-                        <span class="backicon">
-                            <a href="index.html?skipSplash&skipToast">
-                                <img src="img/icons/backicon.png" width="225px" height="110px" alt="back icon(previous part of site)">
-                            </a>
-                        </span>
+        <div id="content">
+            <!--Topbar strony-->
+            <nav id="navtopbar">
+                <div id="topbar">
+                    <div id="hightopbar">
+                        <div class="item">
+                            <span class="backicon">
+                                <a href="index.html?skipSplash&skipToast">
+                                    <img src="img/icons/backicon.png" width="225px" height="110px" alt="back icon(previous part of site)">
+                                </a>
+                            </span>
+                        </div>
+                        <div class="item">
+                            <img class="logo-mobilet" src="img/logo/logo_mobilet.webp" width="335px" height="150px" style="text-align: center; margin-top: 50px;" alt="logo of mobilet app">
+                        </div>
+                        <div class="item">
+                            <span class="skyscapericon">
+                                <img src="img/icons/skyscapericon.png" width="80px" height="80px" alt="skyscaper icon">
+                            </span>
+                            <span class="skyscapericon">
+                                <img src="img/icons/caricon.png" width="80px" height="80px" alt="car icon">
+                            </span>
+                        </div>
                     </div>
-                    <div class="item">
-                        <img class="logo-mobilet" src="img/logo/logo_mobilet.webp" width="335px" height="150px" style="text-align: center; margin-top: 50px;" alt="logo of mobilet app">
-                    </div>
-                    <div class="item">
-                        <span class="skyscapericon">
-                            <img src="img/icons/skyscapericon.png" width="80px" height="80px" alt="skyscaper icon">
-                        </span>
-                        <span class="skyscapericon">
-                            <img src="img/icons/caricon.png" width="80px" height="80px" alt="car icon">
-                        </span>
+                    <div>
+                        <h3 id="napis_parking">Parking</h3>
+                        <h3 id="napis_history">History</h3>
                     </div>
                 </div>
-                <div>
-                    <h3 id="napis_parking">Parking</h3>
-                    <h3 id="napis_history">History</h3>
+            </nav>
+            <div class="container">
+                <div class="topbuttons">
+                    <button class="topbutton1_active">Locations</button>
+                    <button class="topbutton2_noactive">History</button>
+                    <button class="topbutton1_noactive">Locations</button>
+                    <button class="topbutton2_active">History</button>
+                </div>
+                <div id="locations_content">
+                    <div class="addcitytitle">Add city</div>
+                </div>
+                <div id="history_content">
+                    <div class="addcitytitle2">Add city</div>
                 </div>
             </div>
-        </nav>
-        <div class="container">
-            <div class="topbuttons">
-                <button class="topbutton1_active">Locations</button>
-                <button class="topbutton2_noactive">History</button>
-                <button class="topbutton1_noactive">Locations</button>
-                <button class="topbutton2_active">History</button>
-            </div>
-            <div id="locations_content">
-                <div class="addcitytitle">Add city</div>
-            </div>
-            <div id="history_content">
-                <div class="addcitytitle2">Add city</div>
-            </div>
+            <footer id="navfooter">
+                <div class="footer">
+                    text - jazda z ku--
+                </div>
+            </footer>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
         </div>
-        <footer id="navfooter">
-            <div class="footer">
-                text - jazda z ku--
-            </div>
-        </footer>
-        <script>
-            function goBack() {
-                window.history.back();
-            }
-        </script>
     </body>
 </html>

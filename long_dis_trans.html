@@ -29,12 +29,15 @@
         <script src="js/zoom_block.js"></script>
         <!--Skrypt odpowiadający za opóźnienie generowania się strony-->
         <script src="js/load_delay.js"></script>
+        <!--Ładowanie jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!--Rejestracja service worker-->
         <script src="js/reg_of_sw.js"></script>
     </head>
     <body>
         <div id="loader"></div>
-        <!--Topbar strony-->
+        <div id="content">
+            <!--Topbar strony-->
         <nav id="navtopbar">
             <div id="topbar">
                 <div id="hightopbar">
@@ -104,5 +107,6 @@
                 window.history.back();
             }
         </script>
+        </div>
     </body>
 </html>
