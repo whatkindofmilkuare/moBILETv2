@@ -92,7 +92,18 @@ html, body {
 		height: 400px;
 	}
 
-	.napismzdikradom {
+	.napis_public_transport {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-weight: 400;
+		font-size: 48px;
+		border-top: solid 1px black;
+		padding-top: 40px;
+		padding-bottom: 15px;
+		margin-top: 0;
+	}
+
+	.napis_history {
 		color: white;
 		font-family: "Noto Sans Elymaic", sans-serif;
 		font-weight: 400;
@@ -107,6 +118,10 @@ html, body {
 		background-color: white;
 	}
 
+	#history_content {
+		opacity: 0;
+	}
+
     .topbuttons {
         background-color: rgb(219, 219, 219);;
         display: flex;
@@ -116,7 +131,7 @@ html, body {
 		padding-top: 13px;
     }
 
-    .topbutton1 {
+    .topbutton1_active {
         width: 500px;
         background-color: rgb(17, 98, 164);
         color: white;
@@ -131,7 +146,37 @@ html, body {
         border-style: none;
     }
 
-    .topbutton2 {
+	.topbutton1_noactive {
+        width: 470px;
+        background-color: rgb(219, 219, 219);
+        color: rgb(17, 98, 164);
+        font-size: 42px;
+        font-family: "Noto Sans Elymaic", sans-serif;
+        font-weight: 400;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 20px;
+        border-style: none;
+    }
+
+	.topbutton2_active {
+        width: 500px;
+        background-color: rgb(17, 98, 164);
+        color: white;
+        font-size: 42px;
+        font-family: "Noto Sans Elymaic", sans-serif;
+        font-weight: 400;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 20px;
+        border-style: none;
+    }
+
+    .topbutton2_noactive {
         width: 470px;
         background-color: rgb(219, 219, 219);
         color: rgb(17, 98, 164);

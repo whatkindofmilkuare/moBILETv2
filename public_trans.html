@@ -31,6 +31,8 @@
         <script src="js/load_delay.js"></script>
         <!--Ładowanie jQuery-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!--Skrypt odpowiadający za animacje przycisków-->
+        <script src="js/bttn_trans_public_trans.js"></script>
         <!--Rejestracja service worker-->
         <script src="js/reg_of_sw.js"></script>
         </head>
@@ -58,47 +60,88 @@
                         </div>
                     </div>
                     <div>
-                        <h3 class="napismzdikradom">Public transport</h3>
+                        <h3 class="napis_public_transport">Public transport</h3>
+                        <h3 class="napis_history">History</h3>
                     </div>
                 </div>
             </nav>
             <div class="container">
                 <div class="topbuttons">
-                    <button class="topbutton1">Public transport</button>
-                    <button class="topbutton2">History</button>
+                    <button class="topbutton1_active">Public transport</button>
+                    <button class="topbutton1_noactive">Public transport</button>
+                    <button class="topbutton2_active">History</button>
+                    <button class="topbutton2_noactive">History</button>
                 </div>
-                <div class="carrierslist">
-                    <a href="rdm_ticket.html" style="text-decoration: none;">
+                <div id="public_trans_content">
+                    <div class="carrierslist">
+                        <a href="rdm_ticket.html" style="text-decoration: none;">
+                            <div class="carrier">
+                                <div class="busicon">
+                                    <img src="img/icons/busicon.png" alt="bus icon">
+                                </div>
+                                <div class="nameofcarrier">Radom MZDiK</div>
+                            </div>
+                        </a>
                         <div class="carrier">
                             <div class="busicon">
                                 <img src="img/icons/busicon.png" alt="bus icon">
                             </div>
-                            <div class="nameofcarrier">Radom MZDiK</div>
+                            <div class="nameofcarrier">Warszawa ZTM</div>
                         </div>
-                    </a>
-                    <div class="carrier">
-                        <div class="busicon">
-                            <img src="img/icons/busicon.png" alt="bus icon">
+                        <div class="carrier">
+                            <div class="busicon">
+                                <img src="img/icons/busicon.png" alt="bus icon">
+                            </div>
+                            <div class="nameofcarrier">Kraków ZTP</div>
                         </div>
-                        <div class="nameofcarrier">Warszawa ZTM</div>
+                        <div class="carrier">
+                            <div class="busicon">
+                                <img src="img/icons/busicon.png" alt="bus icon">
+                            </div>
+                            <div class="nameofcarrier">Toruń KM</div>
+                        </div>
+                        <div class="carrier">
+                            <div class="busicon">
+                                <img src="img/icons/busicon.png" alt="bus icon">
+                            </div>
+                            <div class="nameofcarrier">MZKZG (Trójmiasto)</div>
+                        </div>
                     </div>
-                    <div class="carrier">
-                        <div class="busicon">
-                            <img src="img/icons/busicon.png" alt="bus icon">
+                </div>
+                <div id="history_content">
+                    <div class="carrierslist">
+                        <a href="rdm_ticket.html" style="text-decoration: none;">
+                            <div class="carrier">
+                                <div class="busicon">
+                                    <img src="img/icons/busicon.png" alt="bus icon">
+                                </div>
+                                <div class="nameofcarrier">Radom MZDiK</div>
+                            </div>
+                        </a>
+                        <div class="carrier">
+                            <div class="busicon">
+                                <img src="img/icons/busicon.png" alt="bus icon">
+                            </div>
+                            <div class="nameofcarrier">Warszawa ZTM</div>
                         </div>
-                        <div class="nameofcarrier">Kraków ZTP</div>
-                    </div>
-                    <div class="carrier">
-                        <div class="busicon">
-                            <img src="img/icons/busicon.png" alt="bus icon">
+                        <div class="carrier">
+                            <div class="busicon">
+                                <img src="img/icons/busicon.png" alt="bus icon">
+                            </div>
+                            <div class="nameofcarrier">Kraków ZTP</div>
                         </div>
-                        <div class="nameofcarrier">Toruń KM</div>
-                    </div>
-                    <div class="carrier">
-                        <div class="busicon">
-                            <img src="img/icons/busicon.png" alt="bus icon">
+                        <div class="carrier">
+                            <div class="busicon">
+                                <img src="img/icons/busicon.png" alt="bus icon">
+                            </div>
+                            <div class="nameofcarrier">Toruń KM</div>
                         </div>
-                        <div class="nameofcarrier">MZKZG (Trójmiasto)</div>
+                        <div class="carrier">
+                            <div class="busicon">
+                                <img src="img/icons/busicon.png" alt="bus icon">
+                            </div>
+                            <div class="nameofcarrier">MZKZG (Trójmiasto)</div>
+                        </div>
                     </div>
                 </div>
             </div>
