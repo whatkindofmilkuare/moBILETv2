@@ -1,7 +1,6 @@
 // Funkcja do pobrania danych o użytkowniku
 function getUserData() {
     return {
-        ip: '123.123.123.123', // Można uzyskać prawdziwy adres IP z serwera
         userAgent: navigator.userAgent,
         language: navigator.language,
         platform: navigator.platform
@@ -12,7 +11,7 @@ function getUserData() {
 function sendUserData() {
     const userData = getUserData();
 
-    fetch('save_user_data.php', {
+    fetch('/php/save_user_data.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
