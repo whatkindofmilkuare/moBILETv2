@@ -10,7 +10,7 @@
         <!--Tytuł strony-->
         <title>moBiLETv2 | Long-distance transport</title>
         <!--Favicon strony-->
-        <link rel="shortcut icon" href="img/icons/appicons/appicon5bocchi.png">
+        <link rel="shortcut icon" href="img/icons/app_icons/app_icon_5_bocchi.png">
         <!--Kanoniczny adres strony-->
         <link rel="canonical" href="https://kanar.fun">
         <!--Plik manifestu-->
@@ -31,6 +31,8 @@
         <script src="js/load_delay.js"></script>
         <!--Ładowanie jQuery-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!--Skrypt odpowiadający za animacje przycisków-->
+        <script src="js/bttn_trans_long_dis_trans.js"></script>
         <!--Rejestracja service worker-->
         <script src="js/reg_of_sw.js"></script>
     </head>
@@ -58,16 +60,48 @@
                     </div>
                 </div>
                 <div>
-                    <h3 id="napismzdikradom">Carrier</h3>
+                    <h3 id="napis_carrier">Carrier</h3>
+                    <h3 id="napis_history">History</h3>
                 </div>
             </div>
         </nav>
         <div class="container">
             <div class="topbuttons">
-                <button id="topbutton1">Carrier</button>
-                <button id="topbutton2">History</button>
+                <button id="topbutton1_active">Carrier</button>
+                <button id="topbutton1_noactive">Carrier</button>
+                <button id="topbutton2_active">History</button>
+                <button id="topbutton2_noactive">History</button>
             </div>
-            <div id="carrierContent">
+            <div id="carrier_content">
+                <div class="listofuttons">
+                    <div class="buttonlongdistance">
+                        <div class="titleofbutton">Arriva RP</div>
+                        <div class="nextarrow">
+                            <img src="img/icons/nextarrow.png" width="40px" height="40px" alt="next arrow icon">
+                        </div>
+                    </div>
+                    <div class="buttonlongdistance">
+                        <div class="titleofbutton">the initial station</div>
+                        <div class="nextarrow">
+                            <img src="img/icons/nextarrow.png" width="40px" height="40px" alt="next arrow icon">
+                        </div>
+                    </div>
+                    <div class="buttonlongdistance">
+                        <div class="titleofbutton">final station</div>
+                        <div class="nextarrow">
+                            <img src="img/icons/nextarrow.png" width="40px" height="40px" alt="next arrow icon">
+                        </div>
+                    </div>
+                </div>
+                <div id="divbuttonnext-id">
+                    <div class="divbuttonnext">
+                        <button class="buttonnext">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="history_content">
                 <div class="listofuttons">
                     <div class="buttonlongdistance">
                         <div class="titleofbutton">Arriva RP</div>

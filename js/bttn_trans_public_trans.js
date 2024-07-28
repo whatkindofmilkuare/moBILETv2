@@ -10,8 +10,8 @@ $(document).ready(function() {
         $('#napis_parking').hide();
         $('#napis_history').show();
         $('.skyscapericon').hide();
-        $(".topbutton1_noactive").fadeIn(500); 
-        $(".topbutton2_active").fadeIn(500); 
+        $('.topbutton1_noactive').show();
+        $('.topbutton2_active').show();
         $('.topbutton1_active').hide();
         $('.topbutton2_noactive').hide();
     });
@@ -24,7 +24,7 @@ $(document).ready(function() {
         $('.skyscapericon').show();
         $('.topbutton1_noactive').hide();
         $('.topbutton2_active').hide();
-        $('.topbutton1_active').fadeIn(500);
-        $('.topbutton2_noactive').fadeIn(500);
+        $('.topbutton1_active').show();
+        $('.topbutton2_noactive').show();
     });
 });
