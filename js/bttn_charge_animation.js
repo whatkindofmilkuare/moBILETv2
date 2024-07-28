@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.item2_blik_active').hide();
+    $('.item2_blik').hide();
     $('.item2_przelewy24_active').hide();
     $('.item2_klarna_active').hide();
 
