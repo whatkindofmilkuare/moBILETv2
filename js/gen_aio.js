@@ -83,3 +83,41 @@ const formattedTime2 = now2.toLocaleTimeString('pl-PL', {
 const outputElement2 = document.getElementById('napisnumerwaznydo');
 outputElement2.textContent = `${formattedDate2} r. ${formattedTime2}`;
 
+
+
+ // Funkcja generująca losowy identyfikator sesji
+ function generateSessionId() {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';
+  let sessionId = '';
+  const charactersLength = characters.length;
+
+  for (let i = 0; i < 10; i++) {
+      const randomIndex = Math.floor(Math.random() * charactersLength);
+      sessionId += characters.charAt(randomIndex);
+  }
+
+  return sessionId;
+}
+
+// Generowanie sessionID i przypisanie go do zmiennej
+const sessionId = generateSessionId();
+console.log("Generated Session ID:", sessionId);
+
+// Funkcja generująca kod QR
+function generateQRCode() {
+  const url = `https://kanar.fun/sgtw/qr_code_ref.html?sessionID=${sessionId}`;
+  const qrCodeContainer = document.getElementById("qrcode");
+
+  // Konfiguracja kodu QR
+  const qrCode = new QRCode(qrCodeContainer, {
+      text: url,
+      width: 256,
+      height: 256,
+      colorDark : "#000000",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.L  // Ustawienie niskiego poziomu korekcji błędów
+  });
+}
+
+// Wywołaj funkcję generowania QR kodu po załadowaniu strony
+window.onload = generateQRCode;

@@ -267,11 +267,20 @@ html, body {
 	}
 
 	#qrcode {
+		display: flex;
 		margin-left: auto; 
 		margin-right: auto; 
-		text-align: center; 
+		text-align: center;
+		justify-content: center;
 		align-items: center;
 		margin-top: 140px;
+	}
+
+	#qrcode img {
+		width: 550px;
+		height: 550px;
+		background-color: white;
+		padding: 25px;
 	}
 
 }
