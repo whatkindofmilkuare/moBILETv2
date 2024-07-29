@@ -1,72 +1,43 @@
-// Funkcja generująca losową 5-cyfrową liczbę
-function generateRandomNumber() {
-    const min = 89400; // Minimalna wartość (włącznie)
-    const max = 89499; // Maksymalna wartość (wyłącznie)
-    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-    return randomNumber;
-}
+document.addEventListener('DOMContentLoaded', function () {
+  // Funkcja pomocnicza do pobierania parametrów z URL
+  function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+  }
 
-// Funkcja, która wstawia losową liczbę do elementu HTML
-function insertRandomNumber() {
-    // Pobranie elementu HTML, do którego wstawimy liczbę
-    const randomNumberElement = document.getElementById("napisnumerbiletu");
+  // Pobieramy sessionID z URL
+  const sessionID = getQueryParam('sessionID');
+  if (!sessionID) {
+      console.error('Brak parametru sessionID w URL.');
+      return;
+  }
 
-    // Sprawdzenie, czy element istnieje
-    if (randomNumberElement) {
-        // Wywołanie funkcji i umieszczenie wyniku w elemencie HTML
-        const randomNum = generateRandomNumber();
-        randomNumberElement.textContent = randomNum;
-    } else {
-        console.error('Element o ID "napisnumerbiletu" nie został znaleziony.');
-    }
-}
+  // Definiujemy ścieżkę do pliku JSON
+  const jsonFilePath = `../data/${sessionID}.json`;
 
-// Upewnienie się, że DOM jest załadowany przed wywołaniem funkcji
-document.addEventListener('DOMContentLoaded', insertRandomNumber);
+  // Funkcja do pobierania danych z pliku JSON
+  async function fetchData() {
+      try {
+          const response = await fetch(jsonFilePath);
+          if (!response.ok) {
+              throw new Error('Błąd podczas pobierania pliku JSON.');
+          }
+          const data = await response.json();
 
+          // Sprawdzamy czy dane zawierają oczekiwane właściwości
+          if (data.randomNum && data.randomNumber && data.formattedTime && data.formattedDate) {
+              // Wstawiamy wartości do odpowiednich elementów HTML
+              document.getElementById('napisnumerbiletu').textContent = data.randomNum;
+              document.getElementById('napiscurrentnumber').textContent = data.randomNumber;
+              document.getElementById('napisgodzinazakupu').textContent = `${data.formattedDate} ${data.formattedTime}`;
+          } else {
+              console.error('Plik JSON nie zawiera wymaganych właściwości.');
+          }
+      } catch (error) {
+          console.error('Błąd:', error);
+      }
+  }
 
-
-
-// Generowanie losowej liczby z zakresu od 91606185172 do 91606199999
-function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-// Losowanie liczby z podanego zakresu
-const randomNumber2 = getRandomNumber(91606185172, 91606199999);
-
-// Znalezienie elementu HTML, do którego chcemy wstawić wygenerowaną liczbę
-const element = document.getElementById('napiscurrentnumber');
-
-// Wstawienie wygenerowanej liczby do elementu HTML
-if (element) {
-  element.textContent = randomNumber2;
-} else {
-  console.error('Element o podanym id nie został znaleziony.');
-}
-
-
-
-
-// Pobranie aktualnej daty i godziny
-const now = new Date();
-
-// Odejmowanie 10 minut
-now.setMinutes(now.getMinutes() - 10);
-
-// Formatowanie daty i godziny
-const formattedDate = now.toLocaleDateString('pl-PL', {
-  day: '2-digit',
-  month: '2-digit',
-  year: 'numeric',
+  // Wywołujemy funkcję fetchData, aby pobrać dane i wstawić je do HTML
+  fetchData();
 });
-
-const formattedTime = now.toLocaleTimeString('pl-PL', {
-  hour: '2-digit',
-  minute: '2-digit',
-  second: '2-digit',
-});
-
-// Wyświetlenie danych w elemencie HTML (np. <div id="output"></div>)
-const outputElement = document.getElementById('napisgodzinazakupu');
-outputElement.textContent = `${formattedDate} r. ${formattedTime}`;
