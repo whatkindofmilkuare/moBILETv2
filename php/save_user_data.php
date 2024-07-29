@@ -20,7 +20,7 @@ function get_client_ip() {
 }
 
 function save_user_data($data) {
-    $file = __DIR__ . '/../data/user_data.json'; // Ścieżka do pliku JSON
+    $file = __DIR__ . '/../data/users/users_data.json'; // Ścieżka do pliku JSON
     $current_data = [];
 
     if (file_exists($file)) {

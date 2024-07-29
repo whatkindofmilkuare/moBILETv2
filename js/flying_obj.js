@@ -30,8 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
 document.addEventListener("DOMContentLoaded", function() {
     const img = document.getElementById('animatedImage2');
     const container = document.querySelector('.flyingobject2');
