@@ -35,9 +35,7 @@ if (element) {
 
 
 
-
-
-// Pobranie aktualnej daty i godziny
+// Pobiera aktualną date i godzine, odejmuje od godziny 10 minut i wyświetla w elemencie html
 const now = new Date();
 
 // Odejmowanie 10 minut
@@ -62,7 +60,7 @@ outputElement.textContent = `${formattedDate} r. ${formattedTime}`;
 
 
 
-// Pobranie aktualnej daty i godziny
+// Pobiera aktualną date i godzine (korzysta już z uprzednio pobranej i zmodyfikowanej), dodaje do aktualnej godziny 60 minut i wyświetla w elemencie html
 const now2 = new Date();
 
 // Odejmowanie 10 minut
