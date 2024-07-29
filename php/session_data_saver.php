@@ -22,11 +22,11 @@ $sessionData = array(
 $jsonData = json_encode($sessionData, JSON_PRETTY_PRINT);
 
 // Określenie nazwy pliku z nową lokalizacją
-$filename = __DIR__ . '/../data/' . $sessionId . '.json';
+$filename = __DIR__ . '/../data/sessions/' . $sessionId . '.json';
 
 // Upewnienie się, że folder /data/ istnieje
-if (!is_dir(__DIR__ . '/../data/')) {
-    mkdir(__DIR__ . '/../data/', 0777, true);
+if (!is_dir(__DIR__ . '/../data/sessions/')) {
+    mkdir(__DIR__ . '/../data/sessions', 0777, true);
 }
 
 // Zapis danych do pliku

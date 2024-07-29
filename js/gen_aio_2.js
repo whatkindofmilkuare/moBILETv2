@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Definiujemy ścieżkę do pliku JSON
-  const jsonFilePath = `../data/${sessionID}.json`;
+  const jsonFilePath = `../data/sessions/${sessionID}.json`;
 
   // Funkcja do pobierania danych z pliku JSON
   async function fetchData() {

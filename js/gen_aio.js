@@ -1,7 +1,7 @@
 // Funkcja generująca losową 5-cyfrową liczbę
 function generateRandomNumber() {
-  const min = 89400; // Minimalna wartość (włącznie)
-  const max = 89499; // Maksymalna wartość (wyłącznie)
+  const min = 18729; // Minimalna wartość (włącznie)
+  const max = 97264; // Maksymalna wartość (wyłącznie)
   const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
   return randomNumber;
 }
@@ -19,7 +19,7 @@ return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 // Losowanie liczby z podanego zakresu
-const randomNumber = getRandomNumber(91606185172, 91606199999);
+const randomNumber = getRandomNumber(11606185172, 91606199999);
 
 // Znalezienie elementu HTML, do którego chcemy wstawić wygenerowaną liczbę
 const element = document.getElementById('napiscurrentnumber');
