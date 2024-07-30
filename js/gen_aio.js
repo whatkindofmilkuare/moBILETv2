@@ -137,6 +137,22 @@ if (window.location.pathname.endsWith('rdm_ticket.html')) {
     console.error('Error sending data to PHP:', error);
   });
   };
+
+  fetch('/php/cleanup.php', {
+    method: 'GET' // lub 'POST', w zależności od potrzeb
+  })
+  .then(response => {
+    if (!response.ok) {
+        throw new Error('Błąd sieciowy: ' + response.statusText);
+    }
+    return response.text(); // lub response.json() jeśli zwraca dane w formacie JSON
+  })
+  .then(data => {
+      console.log('Skrypt PHP został aktywowany:', data);
+  })
+  .catch(error => {
+      console.error('Wystąpił błąd:', error);
+  });
 }
 
 
