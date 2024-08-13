@@ -39,5 +39,8 @@ Część assetów aplikacji pochodzi od twórców oficjalnej aplikacji (tj. logo
 ### Informacje techniczne
 Jeśli ktoś byłby zainteresowany szczegółami technicznymi to w folderze docs znajduję się podstawowa dokumentacja kodu przygotowana przez twórców. Nie jest to jednak dokładna dokumentacja która opisywała by konkretne części kodu lub w jaki sposób coś zostało wykonane lecz bardziej ogólny poglad za co odpowiedzialne są dane pliki. Nasz zespół pracuje nad dokładniejszą dokumentacją projektu jednakże nie jest to nasz cel priorytetowy ze względu na to że aplikacja jest na chwile pisania tego dokumentu w fazie alpha/testowej. Wolimy pracować nad wprowadzeniem zaplanowanych przez nas funkcjonalności oraz rozwiązywaniem istniejących problemów i blędów w aplikacji.
 
+### Licencja
+Projekt dostarczany jest na licencji MIT gdzie wszystkie szczegóły określone są w pliku ```LICENCE```
+
 ### Podziękowania końcowe
 Mamy nadzieje że dzieło naszego zespołu podoba się użytkownikom. Dziękujemy za przeczytanie tego pliku
