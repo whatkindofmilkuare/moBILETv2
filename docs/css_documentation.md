@@ -1,4 +1,19 @@
-# Opis plików css
+# Dokumentacja plików CSS
+### W pliku opisane jest w skrócie zastosowanie akruszy css
+
+## Lista plików CSS użytych w projekcie:
+- charge.css
+- flying_obj.css
+- home_page.css
+- long_dis_trans.css
+- parking.css
+- promotion_page.html
+- public_trans.css
+- rdm_ticket.css
+- slide_show.css
+- toast.css
+
+## Opisy konkretnych plików CSS:
 
 ### charge.css
 Arkusz styli wykorzystywany przez podstrone charge.html

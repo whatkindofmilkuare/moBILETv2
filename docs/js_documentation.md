@@ -1,7 +1,7 @@
-# Opis skryptów javascript 
+# Dokumentacja plików javascript
 ### W pliku opisane jest w skrócie za co odpowiadają poszczególne skrypty javascript
 
-### Lista skryptów javascript użytych w projekcie:
+## Lista skryptów javascript użytych w projekcie:
 - bttn_ani_trans.js
 - flying_obj.js
 - gen_aio.js
@@ -12,6 +12,8 @@
 - slide_show.js
 - toast_splash.js
 - zoom_block.js
+
+## Opisy konkretnych skryptów javascript:
 
 ### bttn_ani_trans.js
 Skrypt bttn_ani_trans.js odpowiada za animacje przycisków w podstronach charge.html, parking.html, long_dis_trans.html i public_trans.html

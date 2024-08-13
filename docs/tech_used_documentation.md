@@ -1,4 +1,4 @@
-# Technologie wykorzystane w projekcie
+# Dokumentacja technologii wykorzystanych w projekcie
 
 ### W projekcie zostały wykorzystane następujące technologie:
 - HTML

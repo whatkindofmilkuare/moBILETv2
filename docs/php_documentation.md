@@ -1,10 +1,12 @@
-# Opis skryptów PHP
+# Dokumentacja plików PHP
 ### W pliku opisane jest w skrócie za co odpowiadają poszczególne skrypty PHP
 
-### Lista skryptów PHP użytych w projekcie:
+## Lista skryptów PHP użytych w projekcie:
 - cleanup.php 
 - save_user_data.php
 - session_data_saver.php
+
+## Opisy konkretnych skryptów PHP:
 
 ### cleanup.php
 Skrypt cleanup.php odpowiada za czyszczenie plików JSON z danymi sesji starszymi niż godzina
