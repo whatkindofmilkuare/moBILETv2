@@ -34,5 +34,8 @@ Strona została stworzona i jest rozwijana wyłącznie w celach edukacyjnych, ja
 ### Pochodzenie assetów użytych w aplikacji
 Część assetów aplikacji pochodzi od twórców oficjalnej aplikacji (tj. logo i ikony które zostały użyte w aplikacji), tutaj zostawiamy odniesienie do oficjalnej strony twórców odwzorowywanej aplikacji [mobilet.pl](https://mobilet.pl) Jeśli chodzi o kod został on napisany od zera (rozwiązania które używają języka javascript zostały wygenerowane przez Copilot lub chatGPT i zmodyfikowane do własnych potrzeb).
 
+### Informacje techniczne
+Jeśli ktoś byłby zainteresowany szczegółami technicznymi to w folderze docs znajduję się podstawowa dokumentacja kodu przygotowana przez twórców
+
 ### Podziękowania końcowe
 Mamy nadzieje że dzieło naszego zespołu podoba się użytkownikom. Dziękujemy za przeczytanie tego pliku
