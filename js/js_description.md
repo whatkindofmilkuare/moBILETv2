@@ -33,3 +33,4 @@ Skrypt slide_show.js odpowiada za działanie karuzeli/pokazu slajdu w bilecie dl
 Skrypt toast_splash.js odpowiada za działanie tj. wyświetlanie się na określony czas i znikanie powiadomienia toast oraz splash screen'u
 ### zoom_block.js 
 Skrypt zoom_block.js odpowiada za blokade możliwości przybliżania strony po dwukrotnym szybkim kliknięciu ekranu przez użytkownika na urządzeniu mobilnym.
+
