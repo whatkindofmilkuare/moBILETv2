@@ -41,7 +41,8 @@ Jeśli ktoś jest zainteresowany szczegółami technicznymi, w folderze `docs` z
 Projekt jest udostępniany na licencji MIT. Szczegóły znajdują się w pliku `LICENSE`.
 
 ### Informacja o braku współpracy z twórcami oryginalnej aplikacji
-Niniejszy projekt jest w pełni niezależny i nie jest w żaden sposób powiązany z twórcami oryginalnej aplikacji moBILET. Jest to projekt hobbystyczny, tworzony wyłącznie w celach edukacyjnych.
+
+Niniejszy projekt jest w pełni niezależny i nie jest w żaden sposób powiązany z twórcami oryginalnej aplikacji moBILET. Jest to projekt hobbystyczny, tworzony wyłącznie w celach edukacyjnych. Aplikacja stanowi jedynie makietę oryginalnej aplikacji i nie umożliwia zakupu biletów na komunikację miejską ani innych usług oferowanych przez moBILET. W celu zakupu biletów lub skorzystania z pełnych funkcjonalności, prosimy o korzystanie z oficjalnej aplikacji udostępnionej przez pierwotnych twórców, dostępnej na [mobilet.pl](https://mobilet.pl).
 
 ### Podziękowania końcowe
 Mamy nadzieję, że nasza praca spotka się z pozytywnym odbiorem. Dziękujemy za zapoznanie się z tym dokumentem.
