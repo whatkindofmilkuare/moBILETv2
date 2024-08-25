@@ -1,7 +1,8 @@
 /py
 /testfiles
 /text
-/data
+/data/users
 /admin_page.html
-/promotion_page.html
+/project_promotion_page.html
 /css/admin_panel.css
+/js/user_data_saver.js
