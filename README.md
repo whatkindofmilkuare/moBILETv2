@@ -45,7 +45,3 @@ Niniejszy projekt jest w pełni niezależny i nie jest w żaden sposób powiąza
 
 ### Podziękowania końcowe
 Mamy nadzieję, że nasza praca spotka się z pozytywnym odbiorem. Dziękujemy za zapoznanie się z tym dokumentem.
-
----
-
-Ten tekst jest teraz bardziej formalny i zawiera odpowiednie zapewnienia dotyczące niezależności projektu.
