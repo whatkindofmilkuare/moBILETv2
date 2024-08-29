@@ -8,7 +8,6 @@
 - load_delay.js
 - nick_names.js
 - reg_of_sw.js
-- save_user_data.js
 - slide_show.js
 - toast_splash.js
 - zoom_block.js
@@ -27,8 +26,6 @@ Skrypt load_delay.js opóźnia ładowanie się a raczej zapobiega doładowywaniu
 Skrypt nick_names.js odpowiada za animacje w stronie promocyjnej. Za jego pomocą wyświetlane są rózne formy nazwy projektu.
 ### reg_of_sw.js
 Skrypt reg_of_sw.js odpowiada za rejestracje Service Worker'a potrzebnego do prawidłowego działania strony internetowej w formie aplikacji PWA
-### save_user_data.js
-Skrypt save_user_data.js pobiera dane o urządzeniu użytkownika i przesyła je na serwer do skryptu PHP w celu zapisu do pliku JSON
 ### slide_show.js
 Skrypt slide_show.js odpowiada za działanie karuzeli/pokazu slajdu w bilecie dla komunikacji miejskiej w Radomiu
 ### toast_splash.js
