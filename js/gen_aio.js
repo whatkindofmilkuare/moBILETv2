@@ -190,6 +190,11 @@ if (window.location.pathname.endsWith('qr_code_ref.html')) {
                 document.getElementById('napisnumerbiletu').textContent = data.randomNum;
                 document.getElementById('napiscurrentnumber').textContent = data.randomNumber;
                 document.getElementById('napisgodzinazakupu').textContent = `${data.formattedDate} ${data.formattedTime}`;
+                let formattedTime = data.formattedTime; // np. "14:30:45"
+                let newFormattedTime = moment(formattedTime, "HH:mm:ss").add(60, 'minutes').format("HH:mm:ss");
+
+                console.log(newFormattedTime);
+                document.getElementById('napisgodzinaważności').textContent = `${data.formattedDate} ${newFormattedTime}`;
             } else {
                 console.error('Plik JSON nie zawiera wymaganych właściwości.');
             }
