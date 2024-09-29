@@ -100,8 +100,8 @@ if (window.location.pathname.endsWith('rdm_ticket.html')) {
   // Konfiguracja kodu QR
   const qrCode = new QRCode(qrCodeContainer, {
       text: url,
-      width: 256,
-      height: 256,
+      width: 600,
+      height: 600,
       colorDark : "#000000",
       colorLight : "#ffffff",
       correctLevel : QRCode.CorrectLevel.L  // Ustawienie niskiego poziomu korekcji błędów
