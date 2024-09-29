@@ -1,0 +1,286 @@
+/* style dla sekcji body */
+html, body {
+    background-color: rgb(0, 0, 0);
+	background-image: url("../img/skyscrapers_background.png");
+	background-position: bottom; 
+    background-repeat: no-repeat; 
+	background-size: 350%;
+	height: 100%;
+	margin: 0;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#full-page {
+	height: 100%;
+}
+
+/* Kafelek z biletem */ /* style tylko dla szerokości wyświetlaczy na telefonach */
+@media screen and (min-width: 427px) {
+
+	/* kafelek z biletem numer jeden */
+	.kafelekbilet1 {
+		width: 860px;
+		height: 1000px;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgb(191, 0, 7);
+		padding: 15px;
+	}
+	
+	/* kafelek z biletem numer jeden (bilet godzinny) */
+	.kafelekbilet1p0 {
+		width: 860px;
+		height: 980px;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgb(191, 0, 7);
+		padding: 15px;
+	}
+
+	/* kafelek z biletem numer dwa */
+	.kafelekbilet2 {
+		width: 860px;
+		height: 1000px;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgb(191, 0, 7);
+		padding: 15px;
+	}
+
+	/* kafelek z biletem numer trzy */
+	.kafelekbilet3 {
+		width: 860px;
+		height: 950px;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgb(191, 0, 7);
+		padding: 15px;
+	}
+
+	/* topbar strony */
+	#topbar {
+		width: 100%;
+		height: 230px;
+		margin-top: 50px;
+		text-align: bottom;
+		background-color: rgb(17, 98, 164);
+		text-align: center;
+		align-items: center;
+		justify-content: right;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+
+	#hightopbar {
+		display: flex;
+	}
+
+	.item {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		-webkit-touch-callout: none;
+		-webkit-user-drag: none;
+	}
+	
+	.item:first-child {
+		justify-content: flex-start;
+		align-items: flex-end;
+		text-align: left;
+	}
+	
+	.item:nth-child(3) {
+		justify-content: flex-end;
+		align-items: flex-end;
+		text-align: right;
+	}
+
+	#navtopbar {
+		max-width: none;
+		width: 100%;
+		margin: 0;
+		
+	}
+
+	.backicon {
+		color: white;
+		font-family: "Lato", sans-serif;
+		font-size: 67px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		text-align: left;
+	}
+
+	.backarrow2 {
+		color: rgb(17, 98, 164);
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 60px;
+	}
+
+	#navfooter {
+		width: 100%;
+		margin: 0;
+	}
+
+	.footer {
+		background-color: black;
+		margin-left: -10px;
+		margin-bottom: 0;
+		height: 400px;
+	}
+
+	/* napis mzdik radom na topbar'ze strony */
+	.napismzdikradom {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-weight: 400;
+		font-size: 48px;
+		border-top: solid 1px black;
+		padding-top: 40px;
+		padding-bottom: 15px;
+		margin-top: 0;
+	}
+
+	/* napis mzdik radom na kafelku z biletem */
+	#napismzdikradom1 {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 54px;
+		font-weight: 400;
+		margin-top: 40px;
+		margin-left: 30px;
+		margin-bottom: 15px;
+	}
+
+	/* mały napis na kafelku z biletem 1 */
+	#napismaly {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 32px;
+		font-weight: 400;
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+
+	/* napis z rodzajem biletu */
+	#napisrodzajbiletu {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 50px;
+		font-weight: 400;
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+
+	/* mały napis na kafelku z biletem 2 */
+	#napismaly2 {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 32px;
+		font-weight: 400;
+		margin-top: 160px;
+		margin-left: 30px;
+	}
+
+	/* napis określający numer boczny pojazdu */
+	#napisnumerbocznypojazdu {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 50px;
+		font-weight: 400;
+		margin-top: 20px;
+		margin-left: 30px;
+	}
+
+	/* napis określający ważność biletu */
+	#napisnumerwaznydo {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 54px;
+		font-weight: 400;
+		margin-top: 20px;
+		margin-left: 30px;
+	}
+
+	/* napis określający numer biletu */
+	#napisnumerbiletu {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 53px;
+		font-weight: 400;
+		margin-top: 220px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 5px;
+		text-align: center;
+		border-width: 5px;
+		border-style: solid;
+		border-color: white;
+		width: 650px;
+	}
+
+	/* mały napis na kafelku z biletem 3 */
+	#napismaly3 {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 32px;
+		font-weight: 400;
+		margin-top: 160px;
+		margin-left: 30px;
+	}
+
+	/* napis określający godzinę zakupu biletu */
+	#napisgodzinazakupu {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 54px;
+		font-weight: 400;
+		margin-top: 220px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 5px;
+		text-align: center;
+		border-width: 5px;
+		border-style: solid;
+		border-color: white;
+		width: 650px;
+	}
+
+	/* napis określający current number */
+	#napiscurrentnumber {
+		color: white;
+		font-family: "Noto Sans Elymaic", sans-serif;
+		font-size: 54px;
+		font-weight: 400;
+		margin-top: 20px;
+		margin-left: 30px;
+		text-decoration: none;
+	}
+
+	#qrcode {
+		display: flex;
+		margin-left: auto; 
+		margin-right: auto; 
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		margin-top: 140px;
+	}
+
+	#qrcode img {
+		width: 550px;
+		height: 550px;
+		background-color: white;
+		padding: 25px;
+	}
+
+}
