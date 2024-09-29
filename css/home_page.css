@@ -10,6 +10,7 @@ html, body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    overflow: hidden;
 }
 
 #full-page {
