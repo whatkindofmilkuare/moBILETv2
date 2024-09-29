@@ -1,6 +1,6 @@
 {
-    "name": "moBILETv2",
-    "short_name": "moBILETv2",
+    "name": "moBiLETv2",
+    "short_name": "moBiLETv2",
     "description": "Twój bilet w komórce",
     "orientation": "portrait",
     "categories": ["travel"],
