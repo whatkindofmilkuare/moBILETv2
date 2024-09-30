@@ -1,139 +1,96 @@
-if (window.location.pathname.endsWith('charge.html')) {
-    $(document).ready(function() {
-        $('.item2_blik').hide();
-        $('.item2_przelewy24_active').hide();
-        $('.item2_klarna_active').hide();
-    
-        $('.item2_blik').click(function() {
-            $('.item2_blik').hide();
-            $('.item2_przelewy24_active').hide(); 
-            $('.item2_klarna_active').hide(); 
-            $('.item2_blik_active').show();
-            $('.item2_przelewy24').show(); 
-            $('.item2_klarna').show(); 
+document.addEventListener('DOMContentLoaded', function () {
+    function hideElements(selectors) {
+        selectors.forEach(selector => {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(element => element.style.display = 'none');
         });
-    
-        $('.item2_przelewy24').click(function() {
-            $('.item2_przelewy24').hide();
-            $('.item2_blik_active').hide(); 
-            $('.item2_klarna_active').hide(); 
-            $('.item2_przelewy24_active').show();
-            $('.item2_blik').show(); 
-            $('.item2_klarna').show(); 
+    }
+
+    function showElements(selectors) {
+        selectors.forEach(selector => {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(element => element.style.display = 'block');
         });
-    
-        $('.item2_klarna').click(function() {
-            $('.item2_klarna').hide();
-            $('.item2_blik_active').hide(); 
-            $('.item2_przelewy24_active').hide(); 
-            $('.item2_klarna_active').show();
-            $('.item2_blik').show(); 
-            $('.item2_przelewy24').show(); 
+    }
+
+    function addClickListener(selector, callback) {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach(element => element.addEventListener('click', callback));
+    }
+
+    if (window.location.pathname.endsWith('charge.html')) {
+        hideElements(['.item2_blik', '.item2_przelewy24_active', '.item2_klarna_active']);
+
+        addClickListener('.item2_blik', function () {
+            hideElements(['.item2_blik', '.item2_przelewy24_active', '.item2_klarna_active']);
+            showElements(['.item2_blik_active', '.item2_przelewy24', '.item2_klarna']);
         });
-    });    
-}
 
-
-
-if (window.location.pathname.endsWith('long_dis_trans.html')) {
-    $(document).ready(function() {
-        $('#history_content').hide();
-        $('#napis_history').hide();
-        $('#topbutton1_noactive').hide();
-        $('#topbutton2_active').hide();
-    
-        $('#topbutton2_noactive').click(function() {
-            $('#carrier_content').hide();
-            $('#history_content').show();
-            $('#napis_carrier').hide();
-            $('#napis_history').show();
-            $('#nexticon').hide();
-            $('#topbutton1_noactive').show();
-            $('#topbutton2_active').show();
-            $('#topbutton1_active').hide();
-            $('#topbutton2_noactive').hide();
+        addClickListener('.item2_przelewy24', function () {
+            hideElements(['.item2_przelewy24']);
+            showElements(['.item2_przelewy24_active', '.item2_blik', '.item2_klarna']);
         });
-    
-        $('#topbutton1_noactive').click(function() {
-            $('#carrier_content').show();
-            $('#history_content').hide();
-            $('#napis_carrier').show();
-            $('#napis_history').hide();
-            $('#nexticon').show();
-            $('#topbutton1_noactive').hide();
-            $('#topbutton2_active').hide();
-            $('#topbutton1_active').show();
-            $('#topbutton2_noactive').show();
+
+        addClickListener('.item2_klarna', function () {
+            hideElements(['.item2_klarna']);
+            showElements(['.item2_klarna_active', '.item2_blik', '.item2_przelewy24']);
         });
-    });
-}
+    }
 
+    if (window.location.pathname.endsWith('long_dis_trans.html')) {
+        hideElements(['#history_content', '#napis_history', '#topbutton1_noactive', '#topbutton2_active']);
 
-
-if (window.location.pathname.endsWith('public_trans.html')) {
-    $(document).ready(function() {
-        $('#history_content').hide();
-        $('.napis_history').hide();
-        $('.topbutton1_noactive').hide();
-        $('.topbutton2_active').hide();
-    
-        $('.topbutton2_noactive').click(function() {
-            $('#public_trans_content').hide();
-            $('#history_content').show();
-            $('.napis_public_transport').hide();
-            $('.napis_history').show();
-            $('.skyscapericon').hide();
-            $('.topbutton1_noactive').show();
-            $('.topbutton2_active').show();
-            $('.topbutton1_active').hide();
-            $('.topbutton2_noactive').hide();
+        addClickListener('#topbutton2_noactive', function () {
+            hideElements(['#carrier_content']);
+            showElements(['#history_content', '#napis_history', '#topbutton1_noactive', '#topbutton2_active']);
+            hideElements(['#napis_carrier', '#topbutton1_active', '#topbutton2_noactive']);
+            document.querySelector('#nexticon').style.display = 'none';
         });
-    
-        $('.topbutton1_noactive').click(function() {
-            $('#public_trans_content').show();
-            $('#history_content').hide();
-            $('.napis_public_transport').show();
-            $('.napis_history').hide();
-            $('.skyscapericon').show();
-            $('.topbutton1_noactive').hide();
-            $('.topbutton2_active').hide();
-            $('.topbutton1_active').show();
-            $('.topbutton2_noactive').show();
-        });
-    });
-}
 
-
-
-if (window.location.pathname.endsWith('parking.html')) {
-    $(document).ready(function() {
-        $('#history_content').hide();
-        $('#napis_history').hide();
-        $('.topbutton1_noactive').hide();
-        $('.topbutton2_active').hide();
-    
-        $('.topbutton2_noactive').click(function() {
-            $('#locations_content').hide();
-            $('#history_content').show();
-            $('#napis_parking').hide();
-            $('#napis_history').show();
-            $('.skyscapericon').hide();
-            $(".topbutton1_noactive").fadeIn(500); 
-            $(".topbutton2_active").fadeIn(500); 
-            $('.topbutton1_active').hide();
-            $('.topbutton2_noactive').hide();
+        addClickListener('#topbutton1_noactive', function () {
+            showElements(['#carrier_content']);
+            hideElements(['#history_content', '#napis_history']);
+            showElements(['#napis_carrier', '#nexticon']);
+            hideElements(['#topbutton1_noactive', '#topbutton2_active']);
+            showElements(['#topbutton1_active', '#topbutton2_noactive']);
         });
-    
-        $('.topbutton1_noactive').click(function() {
-            $('#locations_content').show();
-            $('#history_content').hide();
-            $('#napis_parking').show();
-            $('#napis_history').hide();
-            $('.skyscapericon').show();
-            $('.topbutton1_noactive').hide();
-            $('.topbutton2_active').hide();
-            $('.topbutton1_active').fadeIn(500);
-            $('.topbutton2_noactive').fadeIn(500);
+    }
+
+    if (window.location.pathname.endsWith('public_trans.html')) {
+        hideElements(['#history_content', '.napis_history', '.topbutton1_noactive', '.topbutton2_active']);
+
+        addClickListener('.topbutton2_noactive', function () {
+            hideElements(['#public_trans_content']);
+            showElements(['#history_content', '.napis_history', '.topbutton1_noactive', '.topbutton2_active']);
+            hideElements(['.napis_public_transport', '.topbutton1_active', '.topbutton2_noactive']);
+            document.querySelector('.skyscapericon').style.display = 'none';
         });
-    });
-}
+
+        addClickListener('.topbutton1_noactive', function () {
+            showElements(['#public_trans_content']);
+            hideElements(['#history_content', '.napis_history']);
+            showElements(['.napis_public_transport', '.skyscapericon']);
+            hideElements(['.topbutton1_noactive', '.topbutton2_active']);
+            showElements(['.topbutton1_active', '.topbutton2_noactive']);
+        });
+    }
+
+    if (window.location.pathname.endsWith('parking.html')) {
+        hideElements(['#history_content', '#napis_history', '.topbutton1_noactive', '.topbutton2_active']);
+
+        addClickListener('.topbutton2_noactive', function () {
+            hideElements(['#locations_content', '.topbutton1_active', '.topbutton2_noactive', '.skyscapericon']);
+            showElements(['#history_content', '#napis_history', '.topbutton1_noactive', '.topbutton2_active']);
+            hideElements(['#napis_parking']);
+            document.querySelector('.skyscapericon').style.display = 'none';
+        });
+
+        addClickListener('.topbutton1_noactive', function () {
+            showElements(['#locations_content']);
+            hideElements(['#history_content', '#napis_history']);
+            showElements(['#napis_parking', '.skyscapericon']);
+            hideElements(['.topbutton1_noactive', '.topbutton2_active']);
+            showElements(['.topbutton1_active', '.topbutton2_noactive']);
+        });
+    }
+});
