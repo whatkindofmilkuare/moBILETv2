@@ -11,6 +11,7 @@ html, body {
     -moz-user-select: none;
     -ms-user-select: none;
     overflow: hidden;
+    overflow-x: hidden;
 }
 
 #full-page {
