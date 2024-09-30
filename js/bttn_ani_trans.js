@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         addClickListener('.item2_przelewy24', function () {
-            hideElements(['.item2_przelewy24']);
+            hideElements(['.item2_przelewy24', '.item2_blik_active', '.item2_klarna_active']);
             showElements(['.item2_przelewy24_active', '.item2_blik', '.item2_klarna']);
         });
 
         addClickListener('.item2_klarna', function () {
-            hideElements(['.item2_klarna']);
+            hideElements(['.item2_klarna', '.item2_blik_active', '.item2_przelewy24_active']);
             showElements(['.item2_klarna_active', '.item2_blik', '.item2_przelewy24']);
         });
     }
