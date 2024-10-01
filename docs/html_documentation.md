@@ -6,7 +6,6 @@
 - long_dis_trans.html
 - offline.html
 - parking.html
-- promotion_page.html
 - public_trans.html
 - rdm_ticket.html
 
