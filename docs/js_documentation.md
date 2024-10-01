@@ -6,7 +6,6 @@
 - flying_obj.js
 - gen_aio.js
 - load_delay.js
-- nick_names.js
 - reg_of_sw.js
 - slide_show.js
 - toast_splash.js
