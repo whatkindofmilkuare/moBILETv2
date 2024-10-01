@@ -5,7 +5,6 @@
 - CSS
 - JS
 - PHP
-- jQuery
 - QRCode.js
 - Fetch API
 - Date API
