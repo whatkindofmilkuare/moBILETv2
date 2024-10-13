@@ -22,50 +22,35 @@ document.addEventListener("DOMContentLoaded", function() {
         // Sprawdzenie parametru ?skipSplash&Toast
         if (params.has('skipSplash') && params.has('skipToast')) {
             console.log('Splash i Toast zostaną pominięte');
-            if (isLinux()) {
-                console.log("Urządzenie działa na systemie Linux.");
-                document.getElementById('splash-screen').style.display = 'none';
-                document.getElementById('toast').style.display = 'none';
-                document.getElementById('content').style.display = 'block';
-            } else {
-                console.log("Urządzenie NIE działa na systemie Linux.");
-                document.getElementById('splash-screen').style.display = 'none';
-                document.getElementById('toast').style.display = 'none';
-                document.getElementById('content').style.display = 'block';
-            }
-            return;
-        } else {
-            document.getElementById('splash-screen').style.display = 'flex';
-            setTimeout(function splashscreen() {
-               document.getElementById('splash-screen').style.display = 'none';
-            }, 1500);
-            document.getElementById('toast').style.display = 'block';
-            const toast = document.getElementById('toast');
-            toast.classList.add('show');
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 2500); // Toast znika po 2,5 sekundach
-            document.getElementById('content').style.display = 'block';
-        }
-
-        // Sprawdzenie parametru ?skipSplash&Toast
-        if (params.has('skipSplash') && params.has('skipToast') && params.has('app')) {
-            console.log('Splash i Toast zostaną pominięte');
-            if (isLinux()) {
-                console.log("Urządzenie działa na systemie Linux.");
-                document.getElementById('splash-screen').style.display = 'none';
-                document.getElementById('toast').style.display = 'none';
-                document.getElementById('content').style.display = 'block';
-            } else {
-                console.log("Urządzenie NIE działa na systemie Linux.");
-                document.getElementById('splash-screen').style.display = 'flex';
-                setTimeout(function splashscreen() {
+            if (!params.has('app')) {
+                if (isLinux()) {
+                    console.log("Urządzenie działa na systemie Linux.");
                     document.getElementById('splash-screen').style.display = 'none';
-                }, 1500);
-                document.getElementById('toast').style.display = 'none';
-                document.getElementById('content').style.display = 'block';
+                    document.getElementById('toast').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                } else {
+                    console.log("Urządzenie NIE działa na systemie Linux.");
+                    document.getElementById('splash-screen').style.display = 'none';
+                    document.getElementById('toast').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                }
+                return;
+            } else {
+                if (isLinux()) {
+                    console.log("Urządzenie działa na systemie Linux.");
+                    document.getElementById('splash-screen').style.display = 'none';
+                    document.getElementById('toast').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                } else {
+                    console.log("Urządzenie NIE działa na systemie Linux.");
+                    document.getElementById('splash-screen').style.display = 'flex';
+                    setTimeout(function splashscreen() {
+                        document.getElementById('splash-screen').style.display = 'none';
+                    }, 1500);
+                    document.getElementById('toast').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                }
             }
-            return;
         } else {
             document.getElementById('splash-screen').style.display = 'flex';
             setTimeout(function splashscreen() {
