@@ -1,54 +1,83 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Sprawdź obecność parametrów `skipSplash` i `skipToast` w URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const skipSplash = urlParams.has('skipSplash');
-    const skipToast = urlParams.has('skipToast');
-    
-    // Sprawdź, czy urządzenie to Android
-    const isAndroid = /Android/i.test(navigator.userAgent);
+    // Funkcja, która pobiera wszystkie parametry z URL
+    function getURLParams() {
+        const params = new URLSearchParams(window.location.search);
+        return params;
+    }
 
-    if (!skipSplash) {
-        // Obsługa splash screen
-        setTimeout(function() {
-            // Sprawdź, czy `skipToast` jest obecny
-            if (skipToast && isAndroid) {
-                // Na Androidzie z `skipToast` blokujemy wyświetlanie splash screen
+    // Funkcja do sprawdzania obecności konkretnego parametru
+    function hasParam(param) {
+        const params = getURLParams();
+        return params.has(param);
+    }
+
+    function isLinux() {
+        return navigator.platform.toLowerCase().includes('linux');
+    }
+
+    // Funkcja, która obsługuje parametry skipSplash, skipToast, skipSplash&Toast
+    function handleParams() {
+        const params = getURLParams();
+        
+        // Sprawdzenie parametru ?skipSplash&Toast
+        if (params.has('skipSplash') && params.has('skipToast')) {
+            console.log('Splash i Toast zostaną pominięte');
+            if (isLinux()) {
+                console.log("Urządzenie działa na systemie Linux.");
                 document.getElementById('splash-screen').style.display = 'none';
+                document.getElementById('toast').style.display = 'none';
                 document.getElementById('content').style.display = 'block';
             } else {
-                // Normalne zachowanie dla nie-Androida lub bez `skipToast`
-                document.getElementById('splash-screen').style.display = 'none';
+                console.log("Urządzenie NIE działa na systemie Linux.");
+                document.getElementById('splash-screen').style.display = 'flex';
+                setTimeout(function splashscreen() {
+                    document.getElementById('splash-screen').style.display = 'none';
+                }, 1500);
+                document.getElementById('toast').style.display = 'none';
                 document.getElementById('content').style.display = 'block';
-
-                if (!skipToast) {
-                    // Po wyłączeniu splash screen, pokaż toast
-                    const toast = document.getElementById('toast');
-                    toast.classList.add('show');
-                    setTimeout(() => {
-                        toast.classList.remove('show');
-                    }, 1500); // Toast znika po 1,5 sekundy
-                } else {
-                    // Jeśli `skipToast` jest obecny, nie pokazuj toast
-                    document.getElementById('toast').style.display = 'none';
-                }
             }
-        }, 500); // Splash screen znika po 0,5 sekundach
-    } else {
-        // Jeśli `skipSplash` jest obecny, od razu pokaż zawartość
-        document.getElementById('splash-screen').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
-
-        // Sprawdź, czy `skipToast` jest obecny
-        if (!skipToast) {
-            // Pokazanie toastu nawet gdy `skipSplash` jest obecny
+            return;
+        } else {
+            document.getElementById('splash-screen').style.display = 'flex';
+            setTimeout(function splashscreen() {
+               document.getElementById('splash-screen').style.display = 'none';
+            }, 1500);
+            document.getElementById('toast').style.display = 'block';
             const toast = document.getElementById('toast');
             toast.classList.add('show');
             setTimeout(() => {
                 toast.classList.remove('show');
             }, 2500); // Toast znika po 2,5 sekundach
-        } else {
-            // Jeśli `skipToast` jest obecny, nie pokazuj toast
-            document.getElementById('toast').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
         }
+        
+        // Sprawdzenie parametru ?skipSplash
+        if (params.has('skipSplash')) {
+            console.log('Splash zostanie pominięty');
+            document.getElementById('splash-screen').style.display = 'none';
+            document.getElementById('toast').style.display = 'block';
+            const toast = document.getElementById('toast');
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2500); // Toast znika po 2,5 sekundach
+            document.getElementById('content').style.display = 'block';
+        }
+
+        // Sprawdzenie parametru ?skipToast
+        if (params.has('skipToast')) {
+            console.log('Toast zostanie pominięty');
+            document.getElementById('splash-screen').style.display = 'flex';
+            setTimeout(function splashscreen() {
+                document.getElementById('splash-screen').style.display = 'none';
+            }, 1500);
+            document.getElementById('toast').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+
+
     }
+
+    // Wywołanie funkcji, aby sprawdzić parametry przy załadowaniu strony
+    handleParams();
 });
