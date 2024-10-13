@@ -4,7 +4,7 @@
     "description": "Twój bilet w komórce",
     "orientation": "portrait",
     "categories": ["travel"],
-    "start_url": "/index.html?skipToast",
+    "start_url": "/index.html?skipSplash&skipToast&app",
     "display": "fullscreen",
     "background_color": "#000000",
     "theme_color": "#000000",
