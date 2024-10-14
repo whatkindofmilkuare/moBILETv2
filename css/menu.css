@@ -1,0 +1,119 @@
+/* Style dla menu */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    margin-top: 50px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.side-menu a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+.side-menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style dla głównej zawartości */
+.main-content {
+    transition: margin-left 0.3s;
+}
+
+.open-btn {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#topbar_side_menu {
+	width: 100%;
+	height: calc(350px / 100%);
+	text-align: bottom;
+	background-color: rgb(17, 98, 164);
+	text-align: center;
+	align-items: center;
+	justify-content: right;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    font-family: "Noto Sans Elymaic", sans-serif;
+	font-weight: 500;
+	font-size: 50px;
+    padding-top: 106px;
+    padding-bottom: 33px;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-family: "Noto Sans Elymaic", sans-serif;
+	font-weight: 500;
+    padding-top: 30px;
+    padding-left: 10px;
+	font-size: 50px;
+}
+
+h3 {
+    margin: 0;
+    color: white;
+    font-family: "Noto Sans Elymaic", sans-serif;
+	font-weight: 500;
+    padding-top: 22px;
+    padding-left: 18px;
+	font-size: 50px;
+}
+
+h4 {
+    margin: 0;
+    color: white;
+    font-family: "Noto Sans Elymaic", sans-serif;
+	font-weight: 500;
+    padding-top: 35px;
+    padding-left: 20px;
+	font-size: 50px;
+}
+
+.grey_button {
+    width: 100%;
+    display: flex;
+    background-color: #7F7F7F;
+    padding-top: 22px;
+    padding-left: 5px;
+    padding-bottom: 12px;
+    border-top: white;
+    border-bottom: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.red_button {
+    width: 100%;
+    display: flex;
+    background-color: #C01805;
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-bottom: 30px;
+    border-top: white;
+    border-bottom: white;
+    border-width: 2px;
+    border-style: solid;
+}

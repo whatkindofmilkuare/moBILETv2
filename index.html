@@ -31,14 +31,14 @@
         <link rel="stylesheet" href="css/home_page.css?v=3.1">
         <!--style dla toast notification-->
         <link rel="stylesheet" href="css/toast.css?v=1.1.4">
+        <link rel="stylesheet" href="css/menu.css">
         <!--Skrypt odpowiadający za toast notification i splash screen-->
         <script src="js/toast_splash.js?v=2.0"></script>
         <!--Skrypt odpowiadający za blokade gestu cofania-->
         <script src="js/scroll_block.js"></script>
         <!--Skrypt odpowiadający za opóźnienie generowania się strony-->
         <script src="js/load_delay.js"></script>
-        <!--Skrypt js który pobiera dane o użytkowniku-->
-        <script src="js/user_data_saver.js"></script>
+        <script src="js/menu.js"></script>
         <!--Rejestracja service worker-->
         <script src="js/reg_of_sw.js"></script>
     </head>
@@ -57,14 +57,40 @@
                 Prosimy o odpowiedzialne korzystanie z tej strony. Dziękujemy za zrozumienie.
             </span>
         </div>
+        <div id="sideMenu" class="side-menu">
+            <div id="topbar_side_menu">
+                <h1>Menu</h1>
+                <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            </div>
+            <div class="grey_button">
+                <img src="img/icons/charge.jpeg" width="115px">
+                <h2>Charge account</h2>
+            </div>
+            <div class="red_button">
+                <img src="img/icons/ticket_red.jpg" width="105px">
+                <h3>Last ticket</h3>
+            </div>
+            <div class="grey_button">
+                <img src="img/icons/ticket_grey.jpeg" width="115px">
+                <h2>Ticket history</h2>
+            </div>
+            <div class="grey_button">
+                <img src="img/icons/help.jpeg" width="100px" style="padding-left: 5px;">
+                <h4>Help</h4>
+            </div>
+            <div class="grey_button">
+                <img src="img/icons/settings.jpg" width="115px">
+                <h2>Settings</h2>
+            </div>
+        </div>
         <div id="content">
             <!--Topbar strony-->
             <nav id="navtopbar">
                 <div id="topbar">
                     <div id="hightopbar">
                         <div class="item">
-                            <a href="index.html" class="burgermenuicon">
-                                <img src="img/icons/burgermenuicon.png" width="85px" height="85px" alt="burger menu icon">
+                            <a href="#" class="burgermenuicon">
+                                <img src="img/icons/burgermenuicon.png" width="85px" height="85px" alt="burger menu icon" onclick="openMenu()">
                             </a>
                         </div>
                         <div class="item">
