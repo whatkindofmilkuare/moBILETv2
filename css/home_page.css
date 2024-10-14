@@ -33,7 +33,11 @@ html, body {
 }
 
 #content {
-    display: none; /* Ukryj zawartość strony na początku */
+    display: none;
+}
+
+#copied_content {
+    display: none;
 }
 
 /* topbar strony */

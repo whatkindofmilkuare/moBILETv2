@@ -60,7 +60,6 @@
         <div id="sideMenu" class="side-menu">
             <div id="topbar_side_menu">
                 <h1>Menu</h1>
-                <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
             </div>
             <div class="grey_button">
                 <img src="img/icons/charge.jpeg" width="115px">
@@ -89,7 +88,7 @@
                 <div id="topbar">
                     <div id="hightopbar">
                         <div class="item">
-                            <a href="#" class="burgermenuicon">
+                            <a href="#" class="burgermenuicon" onclick="openMenu()">
                                 <img src="img/icons/burgermenuicon.png" width="85px" height="85px" alt="burger menu icon" onclick="openMenu()">
                             </a>
                         </div>
@@ -120,6 +119,47 @@
                     <img src="img/icons/long-distance-transport.webp" alt="Long-Distance Transport">
                 </a>
                 <a href="charge.html" class="button4">
+                    <img src="img/icons/charge-account.webp" alt="Charge Account">
+                </a>
+            </div>
+        </div>
+        <div id="copied_content" onclick="closeMenu()">
+            <!--Topbar strony-->
+            <nav id="navtopbar">
+                <div id="topbar">
+                    <div id="hightopbar">
+                        <div class="item">
+                            <a href="#" class="burgermenuicon">
+                                <img src="img/icons/burgermenuicon.png" width="85px" height="85px" alt="burger menu icon" onclick="openMenu()">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <img class="logo-mobilet" src="img/logo/logo_mobilet.webp" width="335px" height="150px" style="text-align: center; margin-top: 50px;" alt="logo of mobilet app">
+                        </div>
+                        <div class="item">
+                            <a href="#" class="staricon">
+                                <img src="img/icons/staricon.png" width="70px" height="65px" alt="star icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="napismzdikradom">
+                            <img src="img/icons/acc_balance.webp" width="345px" height="130px" alt="amount of available cash">
+                        </h3>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <a href="#" class="button1">
+                    <img src="img/icons/paid-parking.webp" alt="Paid Parking">
+                </a>
+                <a href="#" class="button2">
+                    <img src="img/icons/public-transport.webp" alt="Public Transport">
+                </a>
+                <a href="#" class="button3">
+                    <img src="img/icons/long-distance-transport.webp" alt="Long-Distance Transport">
+                </a>
+                <a href="#" class="button4">
                     <img src="img/icons/charge-account.webp" alt="Charge Account">
                 </a>
             </div>
