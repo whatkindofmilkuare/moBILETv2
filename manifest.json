@@ -26,19 +26,6 @@
         "type": "image/png"
       }
     ],
-    "shortcuts": [
-      {
-        "name": "Ticket Radom",
-        "url": "/rdm_ticket.html",
-        "icons": [
-          {
-            "src": "/img/icons/app_icons/ticket_rdm_icon.png",
-            "sizes": "96x96",
-            "type": "image/png"
-          }
-        ]
-      }
-    ],
     "screenshots": [
     {
       "src": "/img/app_ss/app_ss_1",
