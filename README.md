@@ -1,6 +1,6 @@
-# moBILETv2
+# moBiLETv2
 
-Projekt ten ma na celu odwzorowanie mechaniki i działania wybranych funkcji aplikacji mobilnej moBILET. Przygotowana przez nas aplikacja internetowa jest prostym klonem natywnej aplikacji moBILET w wersji webowej.
+Projekt ten ma na celu odwzorowanie mechaniki i działania wybranych funkcji aplikacji mobilnej moBiLET. Przygotowana przez nas aplikacja internetowa jest prostym klonem natywnej aplikacji moBiLET w wersji webowej.
 
 ### Jak pobrać naszą aplikację?
 
@@ -42,7 +42,7 @@ Projekt jest udostępniany na licencji MIT. Szczegóły znajdują się w pliku `
 
 ### Informacja o braku współpracy z twórcami oryginalnej aplikacji
 
-Niniejszy projekt jest w pełni niezależny i nie jest w żaden sposób powiązany z twórcami oryginalnej aplikacji moBILET. Jest to projekt hobbystyczny, tworzony wyłącznie w celach edukacyjnych. Aplikacja stanowi jedynie makietę oryginalnej aplikacji i nie umożliwia zakupu biletów na komunikację miejską ani innych usług oferowanych przez moBILET. W celu zakupu biletów lub skorzystania z pełnych funkcjonalności, prosimy o korzystanie z oficjalnej aplikacji udostępnionej przez pierwotnych twórców, dostępnej na [mobilet.pl](https://mobilet.pl).
+Niniejszy projekt jest w pełni niezależny i nie jest w żaden sposób powiązany z twórcami oryginalnej aplikacji moBiLET. Jest to projekt hobbystyczny, tworzony wyłącznie w celach edukacyjnych. Aplikacja stanowi jedynie makietę oryginalnej aplikacji i nie umożliwia zakupu biletów na komunikację miejską ani innych usług oferowanych przez moBiLET. W celu zakupu biletów lub skorzystania z pełnych funkcjonalności, prosimy o korzystanie z oficjalnej aplikacji udostępnionej przez pierwotnych twórców, dostępnej na [mobilet.pl](https://mobilet.pl).
 
 ### Podziękowania końcowe
 Mamy nadzieję, że nasza praca spotka się z pozytywnym odbiorem. Dziękujemy za zapoznanie się z tym dokumentem.
