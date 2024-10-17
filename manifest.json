@@ -1,7 +1,7 @@
 {
-    "name": "moBiLETv2",
+    "name": "moBiLETv2 | Twój bilet w komórce",
     "short_name": "moBiLETv2",
-    "description": "Twój bilet w komórce",
+    "description": "Web'owa makieta aplikacji moBiLET",
     "orientation": "portrait",
     "categories": ["travel"],
     "start_url": "/index.html?skipSplash&skipToast&app",
