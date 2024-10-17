@@ -1,6 +1,6 @@
 # moBiLETv2
 
-Projekt ten ma na celu odwzorowanie mechaniki i działania wybranych funkcji aplikacji mobilnej moBiLET. Przygotowana przez nas aplikacja internetowa jest prostym klonem natywnej aplikacji moBiLET w wersji webowej.
+Projekt ten ma na celu odwzorowanie mechaniki i działania wybranych funkcji aplikacji mobilnej moBiLET. Przygotowana przez nas aplikacja internetowa jest prostą makietą natywnej aplikacji moBiLET w wersji webowej.
 
 ### Jak pobrać naszą aplikację?
 
@@ -29,7 +29,7 @@ Aplikacja jest stale rozwijana, więc rozmieszczenie elementów obecnych na zrzu
 </p>
 
 ### Cel tworzenia i rozwoju projektu
-Strona została stworzona i jest rozwijana wyłącznie w celach edukacyjnych, jako ćwiczenie umiejętności programistycznych. Szczególny nacisk kładziemy na rozwój umiejętności w tworzeniu aplikacji internetowych i PWA. Nasz zespół zdobywa doświadczenie w językach JavaScript i PHP, środowisku Node.js, konfiguracji serwera hostingowego oraz tworzeniu dokumentacji kodu. Twórcy strony nie popierają korzystania z niej w sposób naruszający przepisy prawa. Prosimy o odpowiedzialne korzystanie z tej strony.
+Strona została stworzona i jest rozwijana wyłącznie w celach edukacyjnych, jako ćwiczenie umiejętności programistycznych. Szczególny nacisk kładziemy na rozwój umiejętności w tworzeniu aplikacji internetowych i PWA. Nasz zespół zdobywa doświadczenie w językach JavaScript i PHP, konfiguracji serwera hostingowego oraz tworzeniu dokumentacji kodu. Twórcy strony nie popierają korzystania z niej w sposób naruszający przepisy prawa. Prosimy o odpowiedzialne korzystanie z tej strony.
 
 ### Pochodzenie zasobów użytych w aplikacji
 Część zasobów użytych w aplikacji pochodzi od twórców oficjalnej aplikacji (tj. logo i ikony), dlatego zamieszczamy odniesienie do oficjalnej strony twórców odwzorowywanej aplikacji: [mobilet.pl](https://mobilet.pl). Kod aplikacji został napisany od podstaw, przy czym niektóre rozwiązania w JavaScript zostały wygenerowane przez narzędzia takie jak Copilot lub ChatGPT i dostosowane do naszych potrzeb. Wykorzystano również zewnętrzne biblioteki JavaScript.
